@@ -1,0 +1,89 @@
+* {
+    gruvbox0: #282828;
+    gruvbox1: #282828;
+    gruvbox2: #434c5e;
+    gruvbox3: #504945;
+    gruvbox4: #ebdbb2;
+    gruvbox5: #e5e9f0;
+    gruvbox6: #eceff4;
+    gruvbox7: #8fbcbb;
+    gruvbox8: #fe8019;
+    gruvbox9: #81a1c1;
+    gruvbox10: #fe8019;
+    gruvbox11: #bf616a;
+    gruvbox12: #d08770;
+    gruvbox13: #ebcb8b;
+    gruvbox14: #a3be8c;
+    gruvbox15: #b48ead;
+
+    background-color: @gruvbox1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    spacing: 0px;
+    text-color: @gruvbox4;
+}
+#inputbar {
+    text-color: @gruvbox3;
+    padding: 6px;
+    margin: 0px 0px 2px;
+    children: [ entry ];
+}
+#entry {
+    background-color: @gruvbox3;
+    text-color: @gruvbox4;
+    padding: 5px;
+}
+#message {
+    border: 0px 0px 1px;
+    border-color: @gruvbox3;
+    padding: 0px 0px 6px 7px;
+}
+#listview {
+    lines: 10;
+    padding: 2px 0px 0px;
+    scrollbar: true;
+}
+#element {
+    padding: 0px 0px 0px 7px;
+    margin: 0px 0px 5px 0px;
+    text-color: @gruvbox4;
+}
+#element.normal.normal {
+    text-color: @gruvbox4;
+}
+#element.normal.urgent {
+    text-color: @gruvbox11;
+}
+#element.normal.active {
+    text-color: @gruvbox10;
+}
+#element.alternate.normal {
+    text-color: @gruvbox4;
+}
+#element.alternate.urgent {
+    text-color: @gruvbox11;
+}
+#element.alternate.active {
+    text-color: @gruvbox10;
+}
+#element.selected.normal {
+    background-color: @gruvbox8;
+    text-color: @gruvbox1;
+}
+#element.selected.urgent {
+    background-color: @gruvbox11;
+    text-color: @gruvbox4;
+}
+#element.selected.active {
+    background-color: @gruvbox10;
+    text-color: @gruvbox4;
+}
+#scrollbar {
+    handle-color: @gruvbox3;
+    handle-width: 0.50em;
+}
+#button.selected {
+    background-color: @gruvbox8;
+    text-color: @gruvbox4;
+}
