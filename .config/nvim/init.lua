@@ -56,6 +56,8 @@ require('packer').startup(function(use)
     use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
     use 'luisiacc/gruvbox-baby' -- Gruvbox theme
     use 'sainnhe/gruvbox-material'
+    use 'fladson/vim-kitty'
+    use {'prettier/vim-prettier', run = 'npm install'}
 end)
 
 --Set highlight on search
@@ -75,6 +77,11 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
+
+vim.o.swapfile = false
+vim.o.guicursor = false
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
 
 vim.o.wrap = false
 vim.wo.wrap = false
@@ -107,6 +114,10 @@ vim.o.completeopt = 'menuone,noselect'
 vim.cmd [[ let g:rustfmt_autosave = 1 ]]
 
 vim.keymap.set('i', 'kj', '<ESC>')
+vim.keymap.set({'n', 'v', 'i'}, '<Up>', '<Nop>')
+vim.keymap.set({'n', 'v', 'i'}, '<Down>', '<Nop>')
+vim.keymap.set({'n', 'v', 'i'}, '<Left>', '<Nop>')
+vim.keymap.set({'n', 'v', 'i'}, '<Right>', '<Nop>')
 
 --Set statusbar
 require('lualine').setup {
@@ -199,7 +210,7 @@ vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { 'bash', 'c', 'cpp', 'dockerfile', 'go', 'json', 'lua', 'php', 'python', 'rust', 'vim', 'yaml' },
+  ensure_installed = { 'bash', 'c', 'cpp', 'css', 'dockerfile', 'go', 'html', 'json', 'lua', 'php', 'python', 'rust', 'scss', 'tsx', 'typescript', 'vim', 'yaml' },
   highlight = {
     enable = true, -- false will disable the whole extension
   },

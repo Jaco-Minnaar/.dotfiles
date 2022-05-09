@@ -200,6 +200,16 @@ _G.packer_plugins = {
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-gutentags",
     url = "https://github.com/ludovicchabant/vim-gutentags"
   },
+  ["vim-kitty"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-kitty",
+    url = "https://github.com/fladson/vim-kitty"
+  },
+  ["vim-prettier"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-prettier",
+    url = "https://github.com/prettier/vim-prettier"
+  },
   ["vim-rhubarb"] = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-rhubarb",
