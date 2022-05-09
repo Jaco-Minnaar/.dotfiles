@@ -2,6 +2,7 @@ alias ssh="TERM=xterm ssh"
 alias get_idf='. $HOME/code/tools/esp-idf/export.sh'
 alias pacup='sudo pacman -Syu'
 alias vi="nvim"
+alias vicnf="nvim ${XDG_CONFIG_HOME}/nvim"
 
 # git aliases
 # =============================
