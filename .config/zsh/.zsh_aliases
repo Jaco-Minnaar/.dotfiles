@@ -1,0 +1,16 @@
+alias ssh="TERM=xterm ssh"
+alias get_idf='. $HOME/code/tools/esp-idf/export.sh'
+alias pacup='sudo pacman -Syu'
+alias vi="nvim"
+
+# git aliases
+# =============================
+
+alias gid="git diff"
+alias gic="git commit"
+alias gia="git add"
+alias giA="git add -A"
+alias gip="git push"
+alias gis="git status"
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
