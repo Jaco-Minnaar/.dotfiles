@@ -66,8 +66,8 @@ function _M.init()
     	WB.generate_wibox_one(s)
 
 	    -- Create the bottom wibox
-    	WB.generate_wibox_two(s)
-    	WB.generate_wibox_three(s)
+    	-- WB.generate_wibox_two(s)
+    	-- WB.generate_wibox_three(s)
   	end)
 end
 
