@@ -1,0 +1,1 @@
+/home/jaco/.config/zsh/.zprezto/runcoms/zlogin
