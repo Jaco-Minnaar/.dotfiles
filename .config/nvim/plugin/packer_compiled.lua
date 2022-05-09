@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/gruvbox-baby",
     url = "https://github.com/luisiacc/gruvbox-baby"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -183,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["vim-gutentags"] = {
     config = { "\27LJ\2\n¾\b\0\0\4\0\19\0-6\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0+\1\1\0=\1\4\0006\0\0\0009\0\1\0005\1\6\0=\1\5\0006\0\0\0009\0\1\0006\1\0\0009\1\b\0019\1\t\1'\3\n\0B\1\2\2=\1\a\0006\0\0\0009\0\1\0+\1\2\0=\1\v\0006\0\0\0009\0\1\0+\1\2\0=\1\f\0006\0\0\0009\0\1\0+\1\2\0=\1\r\0006\0\0\0009\0\1\0+\1\2\0=\1\14\0006\0\0\0009\0\15\0'\2\16\0B\0\2\0016\0\0\0009\0\1\0005\1\18\0=\1\17\0K\0\1\0\1\3\0\0\23--tag-relative=yes\21--fields=+ailmnS\31gutentags_ctags_extra_args\\command! -nargs=0 GutentagsClearCache call system('rm ' . g:gutentags_cache_dir . '/*')\bcmd'gutentags_generate_on_empty_buffer gutentags_generate_on_write\"gutentags_generate_on_missing\30gutentags_generate_on_new\25~/.cache/nvim/ctags/\vexpand\afn\24gutentags_cache_dir\1\3\0\0\17package.json\t.git\27gutentags_project_root(gutentags_add_default_project_roots\1>\0\0\n*.git\n*.svg\t*.hg\14*/tests/*\nbuild\tdist\21*sites/*/files/*\bbin\17node_modules\21bower_components\ncache\rcompiled\tdocs\fexample\vbundle\vvendor\t*.md\16*-lock.json\v*.lock\16*bundle*.js\15*build*.js\n.*rc*\v*.json\f*.min.*\n*.map\n*.bak\n*.zip\n*.pyc\f*.class\n*.sln\r*.Master\r*.csproj\n*.tmp\18*.csproj.user\f*.cache\n*.pdb\ntags*\rcscope.*\n*.exe\n*.dll\n*.mp3\n*.ogg\v*.flac\n*.swp\n*.swo\n*.bmp\n*.gif\n*.ico\n*.jpg\n*.png\n*.rar\n*.zip\n*.tar\r*.tar.gz\r*.tar.xz\14*.tar.bz2\n*.pdf\n*.doc\v*.docx\n*.ppt\v*.pptx\28gutentags_ctags_exclude\6g\bvim\0" },

@@ -18,6 +18,7 @@ vim.api.nvim_create_autocmd(
 
 require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Package manager
+    use 'tpope/vim-fugitive'
     use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
     use 'tpope/vim-surround'
 
@@ -26,7 +27,6 @@ require('packer').startup(function(use)
     -- UI to select things (files, grep results, open buffers...)
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-    use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
     use 'nvim-lualine/lualine.nvim' -- Fancier statusline
     -- Add indentation guides even on blank lines
     use 'lukas-reineke/indent-blankline.nvim'
@@ -42,7 +42,6 @@ require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
-    use 'luisiacc/gruvbox-baby' -- Gruvbox theme
 
     use 'onsails/lspkind-nvim'
 
@@ -51,6 +50,12 @@ require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
     use 'rust-lang/rust.vim'
     use 'phpactor/phpactor'
+
+
+    -- Themes
+    use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
+    use 'luisiacc/gruvbox-baby' -- Gruvbox theme
+    use 'sainnhe/gruvbox-material'
 end)
 
 --Set highlight on search
@@ -89,8 +94,12 @@ vim.wo.colorcolumn = '80'
 
 --Set colorscheme
 vim.o.termguicolors = true
-vim.cmd [[colorscheme gruvbox-baby]]
-vim.cmd [[highlight Normal guibg=non]]
+vim.g.gruvbox_baby_function_style = 'bold'
+vim.g.gruvbox_baby_keyword_style = 'italic'
+vim.g.gruvbox_baby_telescope_theme = 1
+vim.g.gruvbox_baby_background_color = 'dark'
+
+vim.cmd [[ colorscheme gruvbox-baby ]]
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -101,12 +110,12 @@ vim.keymap.set('i', 'kj', '<ESC>')
 
 --Set statusbar
 require('lualine').setup {
-  options = {
-    icons_enabled = false,
-    theme = 'gruvbox',
-    component_separators = '|',
-    section_separators = '',
-  },
+    options = {
+        icons_enabled = false,
+        theme = 'gruvbox-baby',
+        component_separators = '|',
+        section_separators = '',
+    },
 }
 
 --Enable Comment.nvim
@@ -132,12 +141,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- Indent blankline
-vim.opt.list = true
-vim.opt.listchars:append("space:⋅")
 require('indent_blankline').setup {
-  show_current_context = true,
-  show_current_context_start = true,
-  space_char_blankline = " "
+    char = '┊',
+    show_trailing_blankline_indent = false
 }
 
 -- Gitsigns
