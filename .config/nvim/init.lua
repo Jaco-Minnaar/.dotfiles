@@ -18,46 +18,63 @@ vim.api.nvim_create_autocmd(
 
 require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Package manager
-    use 'tpope/vim-fugitive'
-    use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
-    use 'tpope/vim-surround'
 
+    -- Utilities
+    use 'tpope/vim-fugitive' -- git plugin
+    use 'tpope/vim-surround' -- plugin for dealing with apostrophes and stuff
     use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
-    use {'ludovicchabant/vim-gutentags', config=require'plugins.vim-gutentags'}
-    -- UI to select things (files, grep results, open buffers...)
+    use 'windwp/nvim-autopairs'
+
+    -- Telescope
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
     use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+    -- UI Stuff
     use 'nvim-lualine/lualine.nvim' -- Fancier statusline
-    -- Add indentation guides even on blank lines
-    use 'lukas-reineke/indent-blankline.nvim'
+    use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
     use 'kyazdani42/nvim-web-devicons'
-    -- Add git related info in the signs columns and popups
-    use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-    -- Highlight, edit, and navigate code using a fast incremental parsing library
-    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-    -- Additional textobjects for treesitter
-    use 'nvim-treesitter/nvim-treesitter-textobjects'
-    use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
-    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'saadparwaiz1/cmp_luasnip'
-    use 'L3MON4D3/LuaSnip' -- Snippets plugin
-
-    use 'onsails/lspkind-nvim'
-
-    use { 'tzachar/cmp-tabnine',  run = './install.sh' }
-
-    use 'simrat39/rust-tools.nvim'
-    use 'rust-lang/rust.vim'
-    use 'phpactor/phpactor'
-
-
-    -- Themes
+    use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } } -- Add git related info in the signs columns and popups
     use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
     use 'luisiacc/gruvbox-baby' -- Gruvbox theme
     use 'sainnhe/gruvbox-material'
-    use 'fladson/vim-kitty'
+    use 'onsails/lspkind-nvim'
+
+
+    -- Treesitter
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+    use 'nvim-treesitter/nvim-treesitter-textobjects'
+
+    -- LSP
+    use 'neovim/nvim-lspconfig'
+
+    -- Completions
+    use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-nvim-lsp'
+
+    -- Snippets
+    use 'L3MON4D3/LuaSnip' -- Snippets plugin
+    use 'saadparwaiz1/cmp_luasnip'
+
+    -- Tabnine
+    use { 'tzachar/cmp-tabnine',  run = './install.sh' }
+
+    -- Prettier
     use {'prettier/vim-prettier', run = 'npm install'}
+
+
+    -- Language Specific Stuff
+
+    -- Rust
+    use 'simrat39/rust-tools.nvim'
+    use 'rust-lang/rust.vim'
+
+    -- PHP
+    use 'phpactor/phpactor'
+
+    -- Kitty Config
+    use 'fladson/vim-kitty'
 end)
 
 --Set highlight on search
@@ -222,10 +239,10 @@ require('nvim-treesitter.configs').setup {
   incremental_selection = {
     enable = true,
     keymaps = {
-      init_selection = 'gnn',
-      node_incremental = 'grn',
+      init_selection = '<CR>',
+      node_incremental = '<CR>',
       scope_incremental = 'grc',
-      node_decremental = 'grm',
+      node_decremental = '<BS>',
     },
   },
   indent = {
@@ -456,3 +473,17 @@ tabnine:setup({
 	run_on_every_keystroke = true,
 	snippet_placeholder = "..",
 })
+
+local npairs = require('nvim-autopairs')
+npairs.setup{
+    enable_check_bracket_line = false,
+    check_ts = true,
+    ts_config = {
+        typescript = {'template_string', 'string'},
+        rust = {'string'},
+        php = {'string'}
+    },
+    ignored_next_char = "[%w%.]"
+}
+
+
