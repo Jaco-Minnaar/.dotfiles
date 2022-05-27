@@ -54,7 +54,7 @@ root.keys(RC.globalkeys);
 require("main.signals");
 
 -- Autostart Applications
-awful.spawn.with_shell('DISPLAY=":0" picom')
+awful.spawn.with_shell('picom --experimental-backends')
 
 local statusbar = require("statusbar.default.statusbar")
 
