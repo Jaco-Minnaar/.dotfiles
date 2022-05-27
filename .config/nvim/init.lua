@@ -24,6 +24,11 @@ require('packer').startup(function(use)
     use 'tpope/vim-surround' -- plugin for dealing with apostrophes and stuff
     use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
     use 'windwp/nvim-autopairs'
+    use {'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons"}
+    use {'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'}
+
+    -- VimWiki
+    use 'vimwiki/vimwiki'
 
     -- Telescope
     use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
@@ -75,6 +80,17 @@ require('packer').startup(function(use)
 
     -- Kitty Config
     use 'fladson/vim-kitty'
+
+    -- SQL
+    use "tpope/vim-dadbod"
+    use { "kristijanhusak/vim-dadbod-completion" }
+    use { "kristijanhusak/vim-dadbod-ui" }
+
+    -- HTML
+    use 'mattn/emmet-vim'
+
+    -- Zig
+    use "ziglang/zig.vim"
 end)
 
 --Set highlight on search
@@ -190,7 +206,7 @@ require('telescope').setup {
   defaults = {
     prompt_prefix = '$ ',
     layout_config = {
-        prompt_position = 'top'
+        -- prompt_position = 'top'
     },
     -- winblend = 10,
     mappings = {
@@ -208,11 +224,15 @@ require('telescope').load_extension 'fzf'
 --Add leader shortcuts
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers)
 vim.keymap.set('n', '<leader>sf', function()
-  require('telescope.builtin').find_files { previewer = false }
+  require('telescope.builtin').find_files {  }
+end)
+vim.keymap.set('n', '<leader>sg', function()
+  require('telescope.builtin').git_files { hidden=true }
 end)
 vim.keymap.set('n', '<C-_>', function()
     require('telescope.builtin').current_buffer_fuzzy_find { sorting_strategy='ascending'}
 end)
+vim.keymap.set('n', '<leader>sj', require('telescope.builtin').jumplist)
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags)
 vim.keymap.set('n', '<leader>st', require('telescope.builtin').tags)
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').grep_string)
@@ -227,7 +247,7 @@ vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { 'bash', 'c', 'cpp', 'css', 'dockerfile', 'go', 'html', 'json', 'lua', 'php', 'python', 'rust', 'scss', 'tsx', 'typescript', 'vim', 'yaml' },
+  ensure_installed = { 'bash', 'c','cpp', 'c_sharp',  'css', 'dockerfile', 'go', 'html', 'json', 'lua', 'php', 'python', 'rust', 'scss', 'tsx', 'typescript', 'vim', 'yaml', 'zig' },
   highlight = {
     enable = true, -- false will disable the whole extension
   },
@@ -319,7 +339,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
 -- Enable the following language servers
-local servers = { 'tsserver', 'dockerls', 'eslint', 'angularls', 'tailwindcss', 'cssls', 'sqlls', 'pyright' }
+local servers = { 'tsserver', 'csharp_ls', 'clangd', 'dockerls', 'eslint', 'angularls', 'html', 'tailwindcss', 'cssls', 'sqlls', 'pyright', 'zls'}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     on_attach = on_attach,
@@ -407,6 +427,7 @@ local source_mapping = {
 }
 
 
+vim.cmd [[ autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} }) ]]
 -- nvim-cmp setup
 local cmp = require 'cmp'
 cmp.setup {
@@ -486,4 +507,14 @@ npairs.setup{
     ignored_next_char = "[%w%.]"
 }
 
+require('todo-comments').setup {}
+require('trouble').setup {}
+
+
+-- local dap = require('dap')
+-- vim.keymap.set('n', '<leader>db', dap.toggle_breakpoint)
+-- vim.keymap.set('n', '<leader>dc', dap.continue)
+-- vim.keymap.set('n', '<leader>di', dap.step_into)
+-- vim.keymap.set('n', '<leader>do', dap.step_over)
+-- vim.keymap.set('n', '<leader>dro', dap.repl.open)
 
