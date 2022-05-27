@@ -1,8 +1,11 @@
 alias ssh="TERM=xterm ssh"
-alias get_idf='. $HOME/code/tools/esp-idf/export.sh'
 alias pacup='sudo pacman -Syu'
 alias vi="nvim"
 alias vicnf="nvim ${XDG_CONFIG_HOME}/nvim"
+alias ls='exa --header --icons --sort=type'
+alias tree='exa --tree --level 3'
+alias sdn="sudo shutdown now"
+alias pkg='paru -Q | fzf'
 
 # git aliases
 # =============================
