@@ -26,6 +26,8 @@ require('packer').startup(function(use)
     use 'windwp/nvim-autopairs'
     use {'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons"}
     use {'folke/todo-comments.nvim', requires = 'nvim-lua/plenary.nvim'}
+    use 'wakatime/vim-wakatime'
+    use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 
     -- VimWiki
     use 'vimwiki/vimwiki'
@@ -101,7 +103,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 --Enable mouse mode
-vim.o.mouse = 'a'
+vim.o.mouse = 'n'
 
 --Enable break indent
 vim.o.breakindent = true
@@ -112,7 +114,7 @@ vim.o.shiftwidth = 4
 vim.o.expandtab = true
 
 vim.o.swapfile = false
-vim.o.guicursor = false
+-- vim.o.guicursor = false
 vim.g.netrw_banner = 0
 vim.g.netrw_liststyle = 3
 
@@ -136,7 +138,7 @@ vim.wo.colorcolumn = '80'
 vim.o.termguicolors = true
 vim.g.gruvbox_baby_function_style = 'bold'
 vim.g.gruvbox_baby_keyword_style = 'italic'
-vim.g.gruvbox_baby_telescope_theme = 1
+-- vim.g.gruvbox_baby_telescope_theme = 1
 vim.g.gruvbox_baby_background_color = 'dark'
 
 vim.cmd [[ colorscheme gruvbox-baby ]]
@@ -155,11 +157,20 @@ vim.keymap.set({'n', 'v', 'i'}, '<Right>', '<Nop>')
 --Set statusbar
 require('lualine').setup {
     options = {
-        icons_enabled = false,
-        theme = 'gruvbox-baby',
+        icons_enabled = true,
+        theme = "gruvbox-baby",
         component_separators = '|',
         section_separators = '',
+        globalstatus = true,
     },
+    sections = {
+        lualine_a = {'mode'},
+        lualine_b = {'branch', 'diff'},
+        lualine_c = {'filename'},
+        lualine_x = {'filetype'},
+        lualine_y = {'diagnostics'},
+        lualine_z = {'progress'}
+    }
 }
 
 --Enable Comment.nvim
@@ -247,9 +258,10 @@ vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
 -- Treesitter configuration
 -- Parsers must be installed manually via :TSInstall
 require('nvim-treesitter.configs').setup {
-  ensure_installed = { 'bash', 'c','cpp', 'c_sharp',  'css', 'dockerfile', 'go', 'html', 'json', 'lua', 'php', 'python', 'rust', 'scss', 'tsx', 'typescript', 'vim', 'yaml', 'zig' },
+  ensure_installed = { 'bash', 'c','cpp', 'c_sharp',  'css', 'dockerfile', 'glsl', 'go', 'html', 'json', 'lua', 'php', 'python', 'rust', 'scss', 'tsx', 'typescript', 'vim', 'yaml', 'zig' },
   highlight = {
     enable = true, -- false will disable the whole extension
+    disable = { "html" }
   },
   rainbow = {
     enable = true,
@@ -416,16 +428,6 @@ lspconfig.phpactor.setup{
 
 -- luasnip setup
 local luasnip = require 'luasnip'
-local lspkind = require("lspkind")
-
-local source_mapping = {
-	buffer = "Buffer",
-	nvim_lsp = "LSP",
-	nvim_lua = "Lua",
-	cmp_tabnine = "TN",
-	path = "Path",
-}
-
 
 vim.cmd [[ autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} }) ]]
 -- nvim-cmp setup
@@ -444,7 +446,7 @@ cmp.setup {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
     },
-    ['<Tab>'] = cmp.mapping(function(fallback)
+    ['<C-j>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
       elseif luasnip.expand_or_jumpable() then
@@ -453,7 +455,7 @@ cmp.setup {
         fallback()
       end
     end, { 'i', 's' }),
-    ['<S-Tab>'] = cmp.mapping(function(fallback)
+    ['<C-k>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_prev_item()
       elseif luasnip.jumpable(-1) then
@@ -463,37 +465,13 @@ cmp.setup {
       end
     end, { 'i', 's' }),
   }),
-  formatting = {
-    format = function(entry, vim_item)
-      vim_item.kind = lspkind.presets.default[vim_item.kind]
-      local menu = source_mapping[entry.source.name]
-      if entry.source.name == "cmp_tabnine" then
-	if entry.completion_item.data ~= nil and entry.completion_item.data.detail ~= nil then
-	  menu = entry.completion_item.data.detail .. " " .. menu
-	end
-        vim_item.kind = ""
-      end
-      vim_item.menu = menu
-      return vim_item
-    end,
-  },
   sources = {
-    { name = "cmp_tabnine" },
     { name = "nvim_lsp"},
     { name = "luasnip" },
     { name = "path" },
     { name = "buffer" , keyword_length = 5},
   },
 }
-
-local tabnine = require("cmp_tabnine.config")
-tabnine:setup({
-	max_lines = 1000,
-	max_num_results = 20,
-	sort = true,
-	run_on_every_keystroke = true,
-	snippet_placeholder = "..",
-})
 
 local npairs = require('nvim-autopairs')
 npairs.setup{
@@ -509,6 +487,7 @@ npairs.setup{
 
 require('todo-comments').setup {}
 require('trouble').setup {}
+require('neogit').setup {}
 
 
 -- local dap = require('dap')

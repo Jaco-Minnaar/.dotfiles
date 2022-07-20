@@ -35,8 +35,6 @@ function WB.generate_wibox_one (s)
         },
         {
             layout = wibox.layout.fixed.horizontal,
-			spotify_widget({ font = "Source Code Pro Semibold 9"}),
-			wibox.widget.textbox("  │  "),
 			fs_widget(),
 			wibox.widget.textbox("  │  "),
 			cpu_widget({
@@ -51,7 +49,8 @@ function WB.generate_wibox_one (s)
 			},
 			wibox.widget.textbox("  │  "),
             mytextclock,
-            wibox.widget.textbox("  ")
+            wibox.widget.textbox("  "),
+            wibox.widget.systray()
         }
     }
 
