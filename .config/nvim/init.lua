@@ -20,7 +20,6 @@ require('packer').startup(function(use)
     use 'wbthomason/packer.nvim' -- Package manager
 
     -- Utilities
-    use 'tpope/vim-fugitive' -- git plugin
     use 'tpope/vim-surround' -- plugin for dealing with apostrophes and stuff
     use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
     use 'windwp/nvim-autopairs'
@@ -64,12 +63,8 @@ require('packer').startup(function(use)
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
     use 'saadparwaiz1/cmp_luasnip'
 
-    -- Tabnine
-    use { 'tzachar/cmp-tabnine',  run = './install.sh' }
-
     -- Prettier
     use {'prettier/vim-prettier', run = 'npm install'}
-
 
     -- Language Specific Stuff
 
@@ -112,6 +107,7 @@ vim.o.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
+vim.o.scrolloff = 4;
 
 vim.o.swapfile = false
 -- vim.o.guicursor = false
@@ -141,7 +137,9 @@ vim.g.gruvbox_baby_keyword_style = 'italic'
 -- vim.g.gruvbox_baby_telescope_theme = 1
 vim.g.gruvbox_baby_background_color = 'dark'
 
-vim.cmd [[ colorscheme gruvbox-baby ]]
+vim.cmd.colorscheme "gruvbox-baby"
+
+
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -176,10 +174,19 @@ require('lualine').setup {
 --Enable Comment.nvim
 require('Comment').setup()
 
+
 --Remap space as leader key
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
+vim.keymap.set({'v'}, '<leader>p', "y'>p")
+vim.keymap.set({'v'}, '<leader>P', "yP")
+
+-- Prettier autocmd
+vim.cmd [[ let g:prettier#autoformat = 1 ]]
+vim.cmd [[ let g:prettier#autoformat_require_pragma = 0 ]]
+vim.cmd [[ let g:prettier#exec_cmd_async = 1 ]]
 
 --Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
@@ -272,9 +279,9 @@ require('nvim-treesitter.configs').setup {
     enable = true,
     keymaps = {
       init_selection = '<CR>',
-      node_incremental = '<CR>',
+      node_incremental = '<C-j>',
       scope_incremental = 'grc',
-      node_decremental = '<BS>',
+      node_decremental = '<C-k>',
     },
   },
   indent = {
@@ -429,7 +436,15 @@ lspconfig.phpactor.setup{
 -- luasnip setup
 local luasnip = require 'luasnip'
 
-vim.cmd [[ autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} }) ]]
+vim.api.nvim_create_augroup("DadbodCompletion", {clear = true});
+vim.api.nvim_create_autocmd({"FileType"}, {
+    pattern = {"sql", "mysql", "plsql"},
+    callback = function ()
+        require('cmp').setup.buffer({sources = {{name = "vim-dadbod-completion"}}})
+    end
+})
+
+-- vim.cmd [[ autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} }) ]]
 -- nvim-cmp setup
 local cmp = require 'cmp'
 cmp.setup {
@@ -441,7 +456,7 @@ cmp.setup {
   mapping = cmp.mapping.preset.insert({
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete(),
+    ['<C-Space>'] = cmp.mapping.complete({}),
     ['<CR>'] = cmp.mapping.confirm {
       behavior = cmp.ConfirmBehavior.Replace,
       select = true,
