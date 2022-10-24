@@ -1,9 +1,18 @@
-configuration {
-  modi: "drun,window,ssh,combi";
-  font: "Ubuntu Regular 10";
-  combi-modi: "window,drun,ssh";
- // width: 33;
-  location: 2;
+configuration{
+    modi: "run,drun,window";
+    icon-theme: "Oranchelo";
+    show-icons: true;
+    terminal: "alacritty";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps ";
+    display-run: "   Run ";
+    display-window: " 﩯  Window";
+    display-Network: " 󰤨  Network";
+    sidebar-mode: true;
 }
 
-@theme "gruvbox-custom"
+@theme "catppuccin-mocha"
+
