@@ -7,7 +7,7 @@ Theme.notification_icon_size = dpi(100)
 Theme.font = "Source Code Pro Semibold 9" -- "Tamsyn 10" -- "Sans 8"
 Theme.taglist_font = "Source Code Pro Semibold 9"
 
-Theme.useless_gap = dpi(4)
+Theme.useless_gap = 0
 
 -- Theme.border_width = dpi(2)
 
@@ -28,7 +28,7 @@ Theme.fg_urgent = "#CC9393"
 Theme.bg_normal = "#282828"
 Theme.bg_focus = "#665C54"
 Theme.bg_urgent = "#CC241D"
-Theme.border_width = dpi(1)
+Theme.border_width = 0
 Theme.border_normal = "#3F3F3F"
 Theme.border_focus = "#7F7F7F"
 Theme.border_marked = "#CC9393"

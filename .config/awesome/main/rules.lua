@@ -32,15 +32,16 @@ function _M.get(clientkeys, clientbuttons)
                     "Arandr", "Blueman-manager", "Gpick", "Kruler",
                     "MessageWin", -- kalarm.
                     "Sxiv", "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
-                    "Wpa_gui", "veromix", "xtightvncviewer", "galculator", "Galculator", "feh",
-                    "vulkan_tut"
+                    "Wpa_gui", "veromix", "xtightvncviewer", "galculator",
+                    "Galculator", "feh", "Game Engine", "egui-test"
 
                 },
 
                 -- Note that the name property shown in xprop might be set slightly after creation of the client
                 -- and the name shown there might not match defined rules here.
                 name = {
-                    "Event Tester" -- xev.
+                    "Event Tester", -- xev.
+                    "Game Engine"
                 },
                 role = {
                     "AlarmWindow", -- Thunderbird's calendar.
