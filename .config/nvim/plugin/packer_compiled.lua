@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/emmet-vim",
@@ -128,6 +133,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
