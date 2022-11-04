@@ -6,6 +6,7 @@ set -- "
     typescript typescript-language-server
     prettier
     vscode-langservers-extracted
+    intelephense
     @tailwindcss/language-server
     sql-language-server
     pyright
