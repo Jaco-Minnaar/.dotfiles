@@ -41,3 +41,4 @@ vim.opt.cursorline = true
 -- Set colorscheme
 vim.opt.termguicolors = true
 vim.opt.completeopt = 'menuone,noselect'
+vim.opt.splitbelow = true

@@ -12,6 +12,7 @@ set -- "
     pyright
     cspell 
     @fsouza/prettierd
+    @astrojs/language-server
 "
 
 npm install -g $@

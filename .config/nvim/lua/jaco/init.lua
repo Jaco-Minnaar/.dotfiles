@@ -2,6 +2,7 @@ require("jaco.packer")
 require("jaco.options")
 require("jaco.colour")
 require("jaco.telescope")
+require("jaco.dap")
 
 require("impatient")
 

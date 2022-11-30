@@ -27,6 +27,10 @@ require('packer').startup(function(use)
         tag = "nightly"
     }
 
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+    use {"rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
+
     -- VimWiki
     use 'vimwiki/vimwiki'
 
@@ -46,7 +50,7 @@ require('packer').startup(function(use)
     use 'ellisonleao/gruvbox.nvim'
     use 'onsails/lspkind-nvim'
 
-    use {"catppuccin/nvim", as = "catppuccin", run = ":CatppuccinCompile"}
+    use {"catppuccin/nvim", as = "catppuccin"}
     use 'folke/tokyonight.nvim'
 
     -- Treesitter

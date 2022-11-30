@@ -6,6 +6,7 @@ alias ls='exa --header --icons --sort=type'
 alias tree='exa --tree --level 3'
 alias sdn="sudo shutdown now"
 alias pkg='paru -Q | fzf'
+alias sudo='doas'
 
 # git aliases
 # =============================

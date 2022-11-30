@@ -28,7 +28,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Enable the following language servers
 local servers = {
     'tsserver', 'csharp_ls', 'clangd', 'dockerls', 'eslint', 'angularls',
-    'html', 'cssls', 'sqlls', 'pyright', 'zls', 'intelephense'
+    'html', 'cssls', 'sqlls', 'pyright', 'zls', 'intelephense', 'astro'
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {on_attach = on_attach, capabilities = capabilities}
@@ -64,9 +64,21 @@ lspconfig.sumneko_lua.setup {
     }
 }
 
+local rt = require("rust-tools")
 -- rust-tools setup
-require("rust-tools").setup({
-    server = {on_attach = on_attach, capabilities = capabilities}
+rt.setup({
+    server = {
+        on_attach = function(_, bufnr)
+            on_attach(_, bufnr)
+            vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions,
+                           {buffer = bufnr})
+
+            vim.keymap.set("n", "<Leader>a",
+                           rt.code_action_group.code_action_group,
+                           {buffer = bufnr})
+        end,
+        capabilities = capabilities
+    }
 })
 
 lspconfig.gopls.setup({

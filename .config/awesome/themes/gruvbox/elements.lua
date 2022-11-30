@@ -39,6 +39,8 @@ Theme.menu_height = dpi(16)
 Theme.menu_width = dpi(140)
 Theme.popup_bg = Theme.bg_normal
 Theme.popup_bar_background_color = Theme.bg_normal
+Theme.notification_bg = "#504945"
+Theme.notification_fg = Theme.fg_normal
 
 Theme.taglist_squares_sel = Theme_path .. "taglist/squarefz.png"
 Theme.taglist_squares_unsel = Theme_path .. "taglist/squarez.png"

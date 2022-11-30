@@ -4,8 +4,14 @@ local awful = require("awful")
 local xresources = require("beautiful.xresources")
 local fs = require("gears.filesystem")
 local dpi = xresources.apply_dpi
+local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
+local naughty = require("naughty")
 
 local mytextclock = wibox.widget.textclock("%a %b %d, %H:%M:%S", 1)
+local cw = calendar_widget({placement = "top_right", start_sunday = true})
+mytextclock:connect_signal("button::press", function(_, _, _, button)
+    if button == 1 then cw.toggle() end
+end)
 
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
@@ -16,8 +22,7 @@ local ram_widget = require("awesome-wm-widgets.ram-widget.ram-widget")
 local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 
-local seperator = wibox.widget.textbox("    ");
-local naughty = require("naughty")
+local seperator = wibox.widget.textbox("  ");
 
 local data_home = fs.get_xdg_config_home()
 local file = io.open(data_home .. "/../.openweather/key", "r")
@@ -35,7 +40,7 @@ function WB.generate_wibox_one(s)
         screen = s,
         -- shape = custom_shape,
         width = s.geometry.width,
-        height = dpi(25),
+        height = dpi(22),
         opacity = 1,
         bg = "#282828",
         border_color = "#00000000"
