@@ -13,6 +13,7 @@ set -- "
     cspell 
     @fsouza/prettierd
     @astrojs/language-server
+    neovim
 "
 
 npm install -g $@

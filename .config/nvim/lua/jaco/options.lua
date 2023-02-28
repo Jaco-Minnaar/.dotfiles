@@ -35,7 +35,7 @@ vim.opt.smartcase = true
 vim.opt.updatetime = 80
 
 vim.opt.signcolumn = 'yes'
-vim.opt.colorcolumn = '80'
+vim.opt.colorcolumn = '100'
 vim.opt.cursorline = true
 
 -- Set colorscheme

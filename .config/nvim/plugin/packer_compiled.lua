@@ -184,6 +184,11 @@ _G.packer_plugins = {
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -293,11 +298,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  ["vim-wakatime"] = {
-    loaded = true,
-    path = "/home/jaco/.local/share/nvim/site/pack/packer/start/vim-wakatime",
-    url = "https://github.com/wakatime/vim-wakatime"
   },
   vimwiki = {
     loaded = true,

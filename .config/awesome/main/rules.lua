@@ -33,7 +33,8 @@ function _M.get(clientkeys, clientbuttons)
                     "MessageWin", -- kalarm.
                     "Sxiv", "Tor Browser", -- Needs a fixed window size to avoid fingerprinting by screen size.
                     "Wpa_gui", "veromix", "xtightvncviewer", "galculator",
-                    "Galculator", "feh", "Game Engine", "egui-test"
+                    "Galculator", "feh", "Game Engine", "egui-test", "qemu",
+                    "viewer"
 
                 },
 
@@ -41,7 +42,7 @@ function _M.get(clientkeys, clientbuttons)
                 -- and the name shown there might not match defined rules here.
                 name = {
                     "Event Tester", -- xev.
-                    "Game Engine"
+                    "Game Engine", "QEMU"
                 },
                 role = {
                     "AlarmWindow", -- Thunderbird's calendar.
