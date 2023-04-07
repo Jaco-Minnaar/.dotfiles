@@ -1,7 +1,7 @@
 require('nvim-treesitter.configs').setup {
     ensure_installed = {
         'astro', 'bash', 'c', 'cpp', 'c_sharp', 'css', 'dockerfile', 'glsl',
-        'go', 'html', 'javascript', 'json', 'lua', 'php', 'python', 'rust',
+        'go', 'html', 'javascript', 'json', 'lua', 'php', 'proto', 'python', 'rust',
         'scss', 'toml', 'tsx', 'typescript', 'vim', 'yaml', 'zig'
     },
     highlight = {

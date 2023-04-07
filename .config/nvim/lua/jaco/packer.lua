@@ -77,6 +77,13 @@ require('packer').startup(function(use)
     use 'simrat39/rust-tools.nvim'
     use 'rust-lang/rust.vim'
 
+    -- c#
+    use 'Hoffs/omnisharp-extended-lsp.nvim'
+    use 'Decodetalkers/csharpls-extended-lsp.nvim'
+
+    -- Flutter
+    use {'akinsho/flutter-tools.nvim', requires = 'nvim-lua/plenary.nvim'}
+
     -- Kitty Config
     use 'fladson/vim-kitty'
 
@@ -90,4 +97,8 @@ require('packer').startup(function(use)
 
     -- Zig
     use "ziglang/zig.vim"
+
+    use "github/copilot.vim"
+    use 'mhartington/formatter.nvim'
+
 end)
