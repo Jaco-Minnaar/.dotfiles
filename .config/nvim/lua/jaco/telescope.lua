@@ -15,9 +15,7 @@ telescope.setup {
             },
             n = {['<C-t>'] = trouble.open_with_trouble}
         }
-    },
-    extensions = {file_browser = {respect_gitignore = false}}
+    }
 }
 
-telescope.load_extension("file_browser")
 telescope.load_extension 'fzf'

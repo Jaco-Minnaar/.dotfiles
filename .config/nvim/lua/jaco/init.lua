@@ -1,4 +1,7 @@
-require("jaco.packer")
+vim.g.mapleader = ' '
+--
+-- require("jaco.packer")
+require("jaco.lazy")
 require("jaco.options")
 require("jaco.colour")
 require("jaco.telescope")

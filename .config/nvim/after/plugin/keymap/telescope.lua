@@ -23,4 +23,3 @@ nmap {
     function() require('telescope.builtin').tags {only_current_buffer = true} end
 }
 nmap {'<leader>?', require('telescope.builtin').oldfiles}
-nmap {'<leader>fb', ':Telescope file_browser<CR>', {noremap = true}}
