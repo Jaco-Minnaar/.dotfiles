@@ -27,7 +27,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Enable the following language servers
 local servers = {
-    'tsserver', 'clangd', 'dockerls', 'eslint', 'angularls', 'html', 'cssls',
+    'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls',
     'sqlls', 'pyright', 'zls', 'intelephense', 'astro', 'bufls'
 }
 for _, lsp in ipairs(servers) do
