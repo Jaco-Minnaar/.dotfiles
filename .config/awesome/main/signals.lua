@@ -21,6 +21,10 @@ client.connect_signal("manage", function(c)
         -- Prevent clients from being unreachable after screen count changes.
         awful.placement.no_offscreen(c)
     end
+
+    -- if string.match(c.name, 'Android Emulator.*') then
+    --     c
+    -- end
 end)
 
 -- Enable sloppy focus, so that focus follows mouse.

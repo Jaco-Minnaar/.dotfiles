@@ -23,9 +23,9 @@ local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local batteryarc_widget = require(
                               "awesome-wm-widgets.batteryarc-widget.batteryarc")
-local email_widget = require("email")
+-- local email_widget = require("email")
 
-local seperator = wibox.widget.textbox(" | ");
+local seperator = wibox.widget.textbox(" ");
 
 local data_home = fs.get_xdg_config_home()
 local file = io.open(data_home .. "/../.openweather/key", "r")
@@ -61,8 +61,8 @@ function WB.generate_wibox_one(s)
         },
         {
             layout = wibox.layout.fixed.horizontal,
-            email_widget.icon,
-            email_widget.widget,
+            -- email_widget.icon,
+            -- email_widget.widget,
             seperator,
             spotify_widget({font = "Source Code Pro Semibold 9"}),
             seperator,
@@ -72,7 +72,10 @@ function WB.generate_wibox_one(s)
             seperator,
             fs_widget(),
             seperator,
-            volume_widget {widget_type = 'icon_and_text'},
+            volume_widget {
+                widget_type = 'icon_and_text',
+                device = 'default'
+            },
             seperator,
             weather_widget({
                 api_key = key,
