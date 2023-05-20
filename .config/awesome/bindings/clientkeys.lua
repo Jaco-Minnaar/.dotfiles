@@ -3,7 +3,7 @@ local gears = require("gears")
 local awful = require("awful")
 -- Custom Local Library
 -- local titlebar = require("anybox.titlebar")
-local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
 local _M = {}
 local modkey = RC.vars.modkey
 

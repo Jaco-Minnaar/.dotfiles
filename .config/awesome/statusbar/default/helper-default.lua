@@ -13,7 +13,7 @@ mytextclock:connect_signal("button::press", function(_, _, _, button)
     if button == 1 then cw.toggle() end
 end)
 
-local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
+local volume_widget = require('awesome-wm-widgets.pactl-widget.volume')
 local cpu_widget = require("awesome-wm-widgets.cpu-widget.cpu-widget")
 local fs_widget = require("awesome-wm-widgets.fs-widget.fs-widget")
 local logout_menu_widget = require(
@@ -72,10 +72,7 @@ function WB.generate_wibox_one(s)
             seperator,
             fs_widget(),
             seperator,
-            volume_widget {
-                widget_type = 'icon_and_text',
-                device = 'default'
-            },
+            volume_widget {widget_type = 'horizontal_bar', with_icon = true},
             seperator,
             weather_widget({
                 api_key = key,
