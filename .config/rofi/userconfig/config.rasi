@@ -6,4 +6,4 @@ configuration {
   location: 2;
 }
 
-@theme "spotlight-dark"
+//@theme "spotlight-dark"

@@ -12,11 +12,11 @@ if wezterm.config_builder then config = wezterm.config_builder() end
 --
 
 -- Set the font size to 12pt
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 8.5
 
 -- For example, changing the color scheme:
-config.color_scheme = 'GruvboxDark'
+config.color_scheme = 'tokyonight_night'
 
 config.hide_tab_bar_if_only_one_tab = true
 

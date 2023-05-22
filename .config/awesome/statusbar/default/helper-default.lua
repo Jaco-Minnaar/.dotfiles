@@ -23,6 +23,8 @@ local spotify_widget = require("awesome-wm-widgets.spotify-widget.spotify")
 local weather_widget = require("awesome-wm-widgets.weather-widget.weather")
 local batteryarc_widget = require(
                               "awesome-wm-widgets.batteryarc-widget.batteryarc")
+
+local beautiful = require("beautiful")
 -- local email_widget = require("email")
 
 local seperator = wibox.widget.textbox(" ");
@@ -45,7 +47,7 @@ function WB.generate_wibox_one(s)
         width = s.geometry.width,
         height = dpi(22),
         opacity = 1,
-        bg = "#282828",
+        bg = beautiful.bg_normal,
         border_color = "#00000000"
     })
 

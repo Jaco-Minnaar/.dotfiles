@@ -54,6 +54,7 @@ require("lazy").setup({
         priority = 1000,
         config = function() vim.cmd [[colorscheme gruvbox]] end
     }, 'folke/tokyonight.nvim', -- Treesitter
+    {"catppuccin/nvim", name = "catppuccin"},
     {'nvim-treesitter/nvim-treesitter', lazy = true, build = ':TSUpdate'},
     {'nvim-treesitter/nvim-treesitter-textobjects', lazy = true},
     {'nvim-treesitter/nvim-treesitter-context', lazy = true}, -- LSP

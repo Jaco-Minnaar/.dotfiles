@@ -25,10 +25,16 @@ end
 -- nvim-cmp supports additional completion capabilities
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+vim.lsp.start({
+    name = "protols",
+    cmd = {"protols_server"},
+    filetypes = {"proto"}
+})
+
 -- Enable the following language servers
 local servers = {
-    'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls',
-    'sqlls', 'pyright', 'zls', 'intelephense', 'astro', 'bufls'
+    'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls', 'sqlls',
+    'pyright', 'zls', 'intelephense', 'astro', 'bufls'
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {on_attach = on_attach, capabilities = capabilities}
