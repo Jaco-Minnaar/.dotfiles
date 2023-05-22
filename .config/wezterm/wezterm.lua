@@ -13,7 +13,7 @@ if wezterm.config_builder then config = wezterm.config_builder() end
 
 -- Set the font size to 12pt
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 8.5
+config.font_size = 9.3
 
 -- For example, changing the color scheme:
 config.color_scheme = 'tokyonight_night'

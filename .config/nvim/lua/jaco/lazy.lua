@@ -83,6 +83,6 @@ require("lazy").setup({
     "tpope/vim-dadbod", "kristijanhusak/vim-dadbod-completion",
     "kristijanhusak/vim-dadbod-ui", -- HTML
     'mattn/emmet-vim', -- Zig
-    "ziglang/zig.vim", "github/copilot.vim",
+    "ziglang/zig.vim", -- "github/copilot.vim",
     {'mhartington/formatter.nvim', lazy = true}
 })

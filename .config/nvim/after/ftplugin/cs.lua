@@ -1,5 +1,12 @@
 vim.opt.colorcolumn = '120'
 
-local nmap = require("jaco.keymap").nmap
+vim.keymap.set({"n", "v"},  "<leader>f", "<cmd>FormatWrite<cr>" )
 
-nmap { "<leader>f", "<cmd>FormatWrite<cr>" }
+vim.cmd([[ 
+    augroup FormatAutogroup
+    autocmd!
+    autocmd BufWritePost * FormatWrite
+    augroup END 
+]])
+
+

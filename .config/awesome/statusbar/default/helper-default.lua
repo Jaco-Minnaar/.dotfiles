@@ -78,7 +78,7 @@ function WB.generate_wibox_one(s)
             seperator,
             weather_widget({
                 api_key = key,
-                coordinates = {-29.1526, 26.172835},
+                coordinates = {-29.0989, 26.2019},
                 show_hourly_forecast = true,
                 show_daily_forecast = true,
                 timeout = 300

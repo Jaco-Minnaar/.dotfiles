@@ -11,5 +11,18 @@ require('formatter').setup({
                 }
             end
         },
+        dart = {
+            function(t)
+                t = t or {}
+
+                local args = { "--output show", "--line-length 120" }
+
+                return {
+                    exe = "dart format",
+                    args = args,
+                    stdin = true,
+                }
+            end
+        }
     }
 })
