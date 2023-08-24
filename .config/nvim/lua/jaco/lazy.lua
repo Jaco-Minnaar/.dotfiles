@@ -58,11 +58,7 @@ require("lazy").setup({
     {'nvim-treesitter/nvim-treesitter', lazy = true, build = ':TSUpdate'},
     {'nvim-treesitter/nvim-treesitter-textobjects', lazy = true},
     {'nvim-treesitter/nvim-treesitter-context', lazy = true}, -- LSP
-    {'neovim/nvim-lspconfig', lazy = true}, {
-        'jose-elias-alvarez/null-ls.nvim',
-        lazy = true,
-        dependencies = {'nvim-lua/plenary.nvim'}
-    }, -- Completions
+    {'neovim/nvim-lspconfig', lazy = true},  
     {
         'hrsh7th/nvim-cmp',
         dependencies = { -- Autocompletion plugin
@@ -74,6 +70,7 @@ require("lazy").setup({
     -- Rust
     {'simrat39/rust-tools.nvim', lazy = true}, 'rust-lang/rust.vim',
     {'Decodetalkers/csharpls-extended-lsp.nvim', lazy = true}, -- Flutter
+    {'Hoffs/omnisharp-extended-lsp.nvim', lazy = true},
     {
         'akinsho/flutter-tools.nvim',
         lazy = true,
@@ -84,5 +81,6 @@ require("lazy").setup({
     "kristijanhusak/vim-dadbod-ui", -- HTML
     'mattn/emmet-vim', -- Zig
     "ziglang/zig.vim", -- "github/copilot.vim",
-    {'mhartington/formatter.nvim', lazy = true}
+    {'mhartington/formatter.nvim', lazy = true},
+    'wakatime/vim-wakatime'
 })

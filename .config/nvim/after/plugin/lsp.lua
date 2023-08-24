@@ -86,13 +86,60 @@ lspconfig.tailwindcss.setup({
     capabilities = capabilities
 })
 
-lspconfig.csharp_ls.setup({
-    handlers = {
-        ["textDocument/definition"] = require('csharpls_extended').handler
-    },
-    cmd = {'csharp-ls'},
+-- lspconfig.csharp_ls.setup({
+--     handlers = {
+--         ["textDocument/definition"] = require('csharpls_extended').handler
+--     },
+--     cmd = {'csharp-ls'},
+--     on_attach = on_attach,
+--     capabilities = capabilities
+-- })
+--
+local pid = vim.fn.getpid()
+
+lspconfig.omnisharp.setup({
     on_attach = on_attach,
-    capabilities = capabilities
+    capabilities = capabilities,
+    cmd = { "/home/jaco/code/omnisharp/OmniSharp", "--languageserver", '--hostPID', tostring(pid) },
+
+    handlers = {
+        ["textDocument/definition"] = require('omnisharp_extended').handler,
+    },
+
+    -- Enables support for reading code style, naming convention and analyzer
+    -- settings from .editorconfig.
+    enable_editorconfig_support = false,
+
+    -- If true, MSBuild project system will only load projects for files that
+    -- were opened in the editor. This setting is useful for big C# codebases
+    -- and allows for faster initialization of code navigation features only
+    -- for projects that are relevant to code that is being edited. With this
+    -- setting enabled OmniSharp may load fewer projects and may thus display
+    -- incomplete reference lists for symbols.
+    enable_ms_build_load_projects_on_demand = false,
+
+    -- Enables support for roslyn analyzers, code fixes and rulesets.
+    enable_roslyn_analyzers = false,
+
+    -- Specifies whether 'using' directives should be grouped and sorted during
+    -- document formatting.
+    organize_imports_on_format = false,
+
+    -- Enables support for showing unimported types and unimported extension
+    -- methods in completion lists. When committed, the appropriate using
+    -- directive will be added at the top of the current file. This option can
+    -- have a negative impact on initial completion responsiveness,
+    -- particularly for the first few completion sessions after opening a
+    -- solution.
+    enable_import_completion = false,
+
+    -- Specifies whether to include preview versions of the .NET SDK when
+    -- determining which version to use for project loading.
+    sdk_include_prereleases = true,
+
+    -- Only run analyzers against open files when 'enableRoslynAnalyzers' is
+    -- true
+    analyze_open_documents_only = false,
 })
 
 lspconfig.azure_pipelines_ls.setup({
@@ -162,39 +209,3 @@ cmp.setup {
         {name = "buffer", keyword_length = 5}
     }
 }
-
-local null_ls = require('null-ls');
-local null_builtins = null_ls.builtins
-
-local formatting_augroup = vim.api.nvim_create_augroup("LspFormatting", {})
-null_ls.setup({
-    sources = {
-        -- null_builtins.diagnostics.cspell.with({
-        --     diagnostics_postprocess = function(diagnostic)
-        --         diagnostic.severity = vim.diagnostic.severity["HINT"]
-        --     end
-        -- }), 
-        null_builtins.formatting.prettierd, null_builtins.formatting.pint,
-        null_builtins.formatting.lua_format
-    },
-    on_attach = function(client, buffnr)
-        if client.supports_method("textDocument/formatting") then
-            vim.api.nvim_clear_autocmds({
-                group = formatting_augroup,
-                buffer = buffnr
-            })
-            vim.api.nvim_create_autocmd({"BufWritePre"}, {
-                group = formatting_augroup,
-                buffer = buffnr,
-                callback = function()
-                    vim.lsp.buf.format({
-                        bufnr = buffnr,
-                        filter = function(client)
-                            return client.name == "null-ls"
-                        end
-                    })
-                end
-            })
-        end
-    end
-})
