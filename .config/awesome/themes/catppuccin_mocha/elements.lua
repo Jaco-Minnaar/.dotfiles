@@ -4,8 +4,8 @@ local dpi = xresources.apply_dpi
 -- naughty.notify({text = "Hello"})
 
 Theme.notification_icon_size = dpi(100)
-Theme.font = "Ubuntu 12" -- "Tamsyn 10" -- "Sans 8"
-Theme.taglist_font = "Ubuntu 12"
+Theme.font = "Source Code Pro Semibold 9" -- "Tamsyn 10" -- "Sans 8"
+Theme.taglist_font = "Source Code Pro Semibold 9"
 
 Theme.useless_gap = 0
 
