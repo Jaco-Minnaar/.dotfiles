@@ -11,4 +11,11 @@
 --
 --
 --
-vim.cmd.colorscheme "tokyonight-night"
+-- vim.cmd.colorscheme "tokyonight-night"
+
+require('catppuccin').setup({
+    integrations = {
+        treesitter_context = true
+    }
+})
+vim.cmd.colorscheme "catppuccin-mocha"

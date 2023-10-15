@@ -42,7 +42,7 @@ require("lazy").setup({
         dependencies = {'nvim-lua/plenary.nvim'}
     }, {'nvim-telescope/telescope-fzf-native.nvim', build = 'make'},
     {'nvim-lualine/lualine.nvim', lazy = true}, -- Fancier statusline
-    {'lukas-reineke/indent-blankline.nvim', lazy = true}, -- Add indentation guides even on blank lines
+    {'lukas-reineke/indent-blankline.nvim', main = "ibl", lazy = true}, -- Add indentation guides even on blank lines
     {'nvim-tree/nvim-web-devicons', lazy = true}, {
         'lewis6991/gitsigns.nvim',
         lazy = true,
@@ -54,7 +54,7 @@ require("lazy").setup({
         priority = 1000,
         config = function() vim.cmd [[colorscheme gruvbox]] end
     }, 'folke/tokyonight.nvim', -- Treesitter
-    {"catppuccin/nvim", name = "catppuccin"},
+    {"catppuccin/nvim", name = "catppuccin", priority = 1000},
     {'nvim-treesitter/nvim-treesitter', lazy = true, build = ':TSUpdate'},
     {'nvim-treesitter/nvim-treesitter-textobjects', lazy = true},
     {'nvim-treesitter/nvim-treesitter-context', lazy = true}, -- LSP
