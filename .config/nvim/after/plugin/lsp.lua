@@ -174,8 +174,12 @@ vim.api.nvim_create_autocmd({"FileType"}, {
 
 -- vim.cmd [[ autocmd FileType sql,mysql,plsql lua require('cmp').setup.buffer({ sources = {{ name = 'vim-dadbod-completion' }} }) ]]
 -- nvim-cmp setup
+local lspkind = require('lspkind')
 local cmp = require 'cmp'
 cmp.setup {
+    -- view = { 
+    --     entries = "native"
+    -- },
     snippet = {expand = function(args) luasnip.lsp_expand(args.body) end},
     mapping = cmp.mapping.preset.insert({
         ['<C-d>'] = cmp.mapping.scroll_docs(-4),
@@ -207,5 +211,12 @@ cmp.setup {
     sources = {
         {name = "nvim_lsp"}, {name = "luasnip"}, {name = "path"},
         {name = "buffer", keyword_length = 5}
+    },
+    formatting = {
+        format = lspkind.cmp_format()
+    },
+    window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered()
     }
 }
