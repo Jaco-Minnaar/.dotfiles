@@ -25,11 +25,11 @@ end
 -- nvim-cmp supports additional completion capabilities
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-vim.lsp.start({
-    name = "protols",
-    cmd = {"protols_server"},
-    filetypes = {"proto"}
-})
+-- vim.lsp.start({
+--     name = "protols",
+--     cmd = {"protols_server"},
+--     filetypes = {"proto"}
+-- })
 
 -- Enable the following language servers
 local servers = {
@@ -95,6 +95,14 @@ lspconfig.tailwindcss.setup({
 --     capabilities = capabilities
 -- })
 --
+
+-- require("roslyn").setup({
+--     dotnet_cmd = "dotnet", -- this is the default
+--     roslyn_version = "4.8.0-3.23475.7", -- this is the default
+--     on_attach = on_attach, -- required
+--     capabilities = capabilities, -- required
+-- })
+
 local pid = vim.fn.getpid()
 
 lspconfig.omnisharp.setup({
@@ -131,7 +139,7 @@ lspconfig.omnisharp.setup({
     -- have a negative impact on initial completion responsiveness,
     -- particularly for the first few completion sessions after opening a
     -- solution.
-    enable_import_completion = false,
+    enable_import_completion = true,
 
     -- Specifies whether to include preview versions of the .NET SDK when
     -- determining which version to use for project loading.

@@ -9,6 +9,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    'jmederosalvarado/roslyn.nvim',
     'lewis6991/impatient.nvim', -- Utilities
     {'numToStr/Comment.nvim', lazy = true}, -- "gc" to comment visual regions/lines
     {
@@ -43,6 +44,7 @@ require("lazy").setup({
     }, {'nvim-telescope/telescope-fzf-native.nvim', build = 'make'},
     {'nvim-lualine/lualine.nvim', lazy = true}, -- Fancier statusline
     {'lukas-reineke/indent-blankline.nvim', main = "ibl", lazy = true}, -- Add indentation guides even on blank lines
+    {'folke/persistence.nvim', event = "BufReadPre", lazy = false, opts = {dir = vim.fn.expand(vim.fn.stdpath("state") .. "/sessions/")}},
     {'nvim-tree/nvim-web-devicons', lazy = true}, {
         'lewis6991/gitsigns.nvim',
         lazy = true,
@@ -62,7 +64,7 @@ require("lazy").setup({
     {
         'hrsh7th/nvim-cmp',
         dependencies = { -- Autocompletion plugin
-            'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-nvim-lsp'
+            'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-nvim-lsp', 'onsails/lspkind.nvim'
         }
     }, -- Snippets
     'L3MON4D3/LuaSnip', -- Snippets plugin

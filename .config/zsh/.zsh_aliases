@@ -6,7 +6,7 @@ alias ls='exa --header --icons --sort=type'
 alias tree='exa --tree --level 3'
 alias sdn="sudo shutdown now"
 alias pkg='paru -Q | fzf'
-alias sudo='doas'
+# alias sudo='doas'
 
 # git aliases
 # =============================
@@ -17,6 +17,7 @@ alias gia="git add"
 alias giA="git add -A"
 alias gip="git push"
 alias gis="git status"
+alias gfu='~/code/scripts/merge_upstream.sh $(pwd)'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 

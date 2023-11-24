@@ -15,7 +15,7 @@ WORKING_DIRECTORY=$1
 
 BRANCH=$(git branch --show-current)
 
-if [ "$(git stash)" = "No local changes to save" ]; then
+if [ "$(git stash -u)" = "No local changes to save" ]; then
     STASHED=0
 else
     STASHED=1
