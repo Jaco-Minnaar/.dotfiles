@@ -1,6 +1,6 @@
 local nmap = require("jaco.keymap").nmap
 
-vim.keymap.set('i', 'kj', '<ESC>')
+-- vim.keymap.set('i', 'kj', '<ESC>')
 vim.keymap.set({'n', 'v', 'i'}, '<Up>', '<Nop>')
 vim.keymap.set({'n', 'v', 'i'}, '<Down>', '<Nop>')
 vim.keymap.set({'n', 'v', 'i'}, '<Left>', '<Nop>')

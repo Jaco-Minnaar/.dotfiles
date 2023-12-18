@@ -2,12 +2,19 @@ vim.opt.colorcolumn = '120'
 
 vim.keymap.set({"n", "v"},  "<leader>f", "<cmd>FormatWrite<cr>" )
 
-vim.cmd([[ 
-    augroup FormatAutogroup
-    autocmd!
-    autocmd BufWritePost * FormatWrite
-    augroup END 
-]])
+-- vim.api.nvim_create_autocmd('BufWritePost', {
+--     callback = function()
+--         vim.api.nvim_cmd({cmd = 'FormatWrite'}, {output = false})
+--     end,
+--     pattern = {"*.cs"}
+-- })
+
+-- vim.cmd([[ 
+--     augroup FormatAutogroup
+--     autocmd!
+--     autocmd BufWritePost * FormatWrite
+--     augroup END 
+-- ]])
 
 local dap = require('dap')
 
@@ -35,4 +42,4 @@ vim.keymap.set("n", "<leader>v", dap.step_over)
 vim.keymap.set("n", "<leader>u", dap.step_out)
 vim.keymap.set("n", "<leader>c", dap.continue)
 
-
+-- require("jaco.custom.csharpier_ls").setup()

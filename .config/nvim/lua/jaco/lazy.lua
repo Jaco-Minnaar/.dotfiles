@@ -51,23 +51,33 @@ require("lazy").setup({
         dependencies = {'nvim-lua/plenary.nvim'}
     }, -- Add git related info in the signs columns and popups
     {
+        "max397574/better-escape.nvim",
+        config = function()
+            require("better_escape").setup({mapping = {"kj"}})
+        end
+    },
+    {
         'ellisonleao/gruvbox.nvim',
         lazy = false,
         priority = 1000,
-        config = function() vim.cmd [[colorscheme gruvbox]] end
     }, 'folke/tokyonight.nvim', -- Treesitter
     {"catppuccin/nvim", name = "catppuccin", priority = 1000},
     {'nvim-treesitter/nvim-treesitter', lazy = true, build = ':TSUpdate'},
     {'nvim-treesitter/nvim-treesitter-textobjects', lazy = true},
     {'nvim-treesitter/nvim-treesitter-context', lazy = true}, -- LSP
-    {'neovim/nvim-lspconfig', lazy = true},  
+    {'Jaco-Minnaar/nvim-lspconfig', lazy = true},
     {
         'hrsh7th/nvim-cmp',
         dependencies = { -- Autocompletion plugin
             'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-nvim-lsp', 'onsails/lspkind.nvim'
         }
     }, -- Snippets
-    'L3MON4D3/LuaSnip', -- Snippets plugin
+    {
+        'L3MON4D3/LuaSnip',
+        version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
+	    -- install jsregexp (optional!).
+	    build = "make install_jsregexp"
+    }, -- Snippets plugin
     'saadparwaiz1/cmp_luasnip', -- Language Specific Stuff
     -- Rust
     {'simrat39/rust-tools.nvim', lazy = true}, 'rust-lang/rust.vim',
@@ -82,7 +92,7 @@ require("lazy").setup({
     "tpope/vim-dadbod", "kristijanhusak/vim-dadbod-completion",
     "kristijanhusak/vim-dadbod-ui", -- HTML
     'mattn/emmet-vim', -- Zig
-    "ziglang/zig.vim", -- "github/copilot.vim",
+    "ziglang/zig.vim", "github/copilot.vim",
     {'mhartington/formatter.nvim', lazy = true},
     'wakatime/vim-wakatime'
 })

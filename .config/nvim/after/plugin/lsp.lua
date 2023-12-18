@@ -31,10 +31,16 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 --     filetypes = {"proto"}
 -- })
 
+-- vim.lsp.start({
+--     name = "protols",
+--     cmd = {"protols_server"},
+--     filetypes = {"proto"}
+-- })
+
 -- Enable the following language servers
 local servers = {
     'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls', 'sqlls',
-    'pyright', 'zls', 'intelephense', 'astro', 'bufls'
+    'pyright', 'zls', 'intelephense', 'astro', 'bufls', 'csharpierls'
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {on_attach = on_attach, capabilities = capabilities}

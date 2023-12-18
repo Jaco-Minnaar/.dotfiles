@@ -5,8 +5,7 @@ require('formatter').setup({
         cs = {
             function()
                 return {
-                    exe = "dotnet",
-                    args = {"csharpier"},
+                    exe = "dotnet-csharpier",
                     stdin = true
                 }
             end
