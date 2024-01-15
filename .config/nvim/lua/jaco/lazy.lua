@@ -94,5 +94,6 @@ require("lazy").setup({
     'mattn/emmet-vim', -- Zig
     "ziglang/zig.vim", "github/copilot.vim",
     {'mhartington/formatter.nvim', lazy = true},
-    'wakatime/vim-wakatime'
+    'wakatime/vim-wakatime',
+    "lewis6991/hover.nvim",
 })

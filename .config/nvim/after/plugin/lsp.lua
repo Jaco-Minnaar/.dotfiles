@@ -1,6 +1,7 @@
 -- LSP settings
 local lspconfig = require 'lspconfig'
 local util = require("lspconfig/util")
+
 local on_attach = function(_, bufnr)
     local opts = {buffer = bufnr}
     vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
@@ -22,7 +23,7 @@ local on_attach = function(_, bufnr)
     vim.api.nvim_create_user_command("Format", vim.lsp.buf.format, {})
 end
 
--- nvim-cmp supports additional completion capabilities
+-- nvim-cmp supports additional completion capabilitiesutil
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- vim.lsp.start({
@@ -40,7 +41,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 -- Enable the following language servers
 local servers = {
     'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls', 'sqlls',
-    'pyright', 'zls', 'intelephense', 'astro', 'bufls', 'csharpierls'
+    'pyright', 'zls', 'intelephense', 'astro', 'bufls', 'csharpierls', 'clangd'
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {on_attach = on_attach, capabilities = capabilities}
@@ -111,6 +112,23 @@ lspconfig.tailwindcss.setup({
 
 local pid = vim.fn.getpid()
 
+local cs_hover = function(_, result, ctx, config)
+    if not (result and result.contents) then
+        return vim.lsp.handlers.hover(_, result, ctx, config)
+    end
+    if type(result.contents) == "string" then
+        local s = string.gsub(result.contents, "\\", "")
+        s = string.gsub(s, "\r", "")
+        result.contents = s
+        return vim.lsp.handlers.hover(_, result, ctx, config)
+    else
+        local s = string.gsub(result.contents.value, "\\", "")
+        s = string.gsub(s, "\r", "")
+        result.contents.value = s
+        return vim.lsp.handlers.hover(_, result, ctx, config)
+    end
+end
+
 lspconfig.omnisharp.setup({
     on_attach = on_attach,
     capabilities = capabilities,
@@ -118,6 +136,7 @@ lspconfig.omnisharp.setup({
 
     handlers = {
         ["textDocument/definition"] = require('omnisharp_extended').handler,
+        ["textDocument/hover"] = vim.lsp.with(cs_hover, {border = "rounded"}),
     },
 
     -- Enables support for reading code style, naming convention and analyzer
