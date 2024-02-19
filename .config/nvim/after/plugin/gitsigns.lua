@@ -4,8 +4,9 @@ require('gitsigns').setup {
     --     change = {text = '~'},
     --     delete = {text = '_'},
     --     topdelete = {text = '‾'},
-    --     changedelete = {text = '~'}
-    -- }
+    --     changedelete = {text = '~'},
+    --     untracked = {text = '?'}
+    -- },
     numhl = true,
     current_line_blame = true,
     on_attach = function(bufnr)

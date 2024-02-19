@@ -86,7 +86,7 @@ require("lazy").setup({
     {
         'akinsho/flutter-tools.nvim',
         lazy = true,
-        dependencies = {'nvim-lua/plenary.nvim'}
+        dependencies = {'nvim-lua/plenary.nvim', 'stevearc/dressing.nvim'}
     }, -- Kitty Config
     'fladson/vim-kitty', -- SQL
     "tpope/vim-dadbod", "kristijanhusak/vim-dadbod-completion",
@@ -96,4 +96,9 @@ require("lazy").setup({
     {'mhartington/formatter.nvim', lazy = true},
     'wakatime/vim-wakatime',
     "lewis6991/hover.nvim",
+    {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" }
+    }
 })

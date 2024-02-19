@@ -41,7 +41,7 @@ require("flutter-tools").setup({
         enabled = true,
         run_via_dap = true
     },
-    flutter_path = "/home/jaco/code/flutter/bin/flutter",
+    flutter_path = "/home/jaco/fvm/default/bin/flutter",
     widget_guides = {
         enabled = true
     },

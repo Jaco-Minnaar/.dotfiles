@@ -2,14 +2,6 @@ local util = require('formatter.util')
 
 require('formatter').setup({
     filetype = {
-        cs = {
-            function()
-                return {
-                    exe = "dotnet-csharpier",
-                    stdin = true
-                }
-            end
-        },
         javascript = {
             require('formatter.filetypes.javascript').prettierd
         },
@@ -21,6 +13,9 @@ require('formatter').setup({
         },
         typescriptreact = {
             require('formatter.filetypes.typescriptreact').prettierd
+        },
+        json = {
+            require('formatter.filetypes.json').prettierd
         },
         dart = {
             function(t)

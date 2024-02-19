@@ -1,8 +1,8 @@
 require('nvim-treesitter.configs').setup {
     ensure_installed = {
         'astro', 'bash', 'c', 'cpp', 'c_sharp', 'css', 'dart', 'dockerfile', 'glsl',
-        'go', 'html', 'javascript', 'json', 'kdl', 'lua', 'markdown_inline', 'php', 'proto', 'python',
-        'rust', 'scss', 'toml', 'tsx', 'typescript', 'vim', 'xml', 'yaml', 'zig'
+        'go', 'graphql', 'html', 'javascript', 'json', 'kdl', 'lua', 'markdown', 'php', 'proto', 'python',
+        'ron', 'rust', 'scss', 'sql', 'toml', 'tsx', 'typescript', 'vim', 'xml', 'yaml', 'zig'
     },
     highlight = {
         enable = true, -- false will disable the whole extension

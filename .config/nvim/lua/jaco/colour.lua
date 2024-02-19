@@ -4,7 +4,7 @@ require('gruvbox').setup({
         DiffAdd = {fg = "#3f4531", bg = "#ebdbb2"},
         DiffDelete = {fg = "#532020", bg = "#ebdbb2"}
     },
-    transparent_mode = true
+    transparent_mode = false
 })
 
 vim.cmd.colorscheme "gruvbox"

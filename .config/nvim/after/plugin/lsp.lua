@@ -40,8 +40,8 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Enable the following language servers
 local servers = {
-    'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls', 'sqlls',
-    'pyright', 'zls', 'intelephense', 'astro', 'bufls', 'csharpierls', 'clangd'
+    'tsserver', 'dockerls', 'eslint', 'angularls', 'html', 'cssls', 'sqlls', 'pyright', 'zls', 
+    'intelephense', 'astro', 'bufls', 'csharpierls', 'clangd', 'graphql'
 }
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {on_attach = on_attach, capabilities = capabilities}
@@ -132,11 +132,11 @@ end
 lspconfig.omnisharp.setup({
     on_attach = on_attach,
     capabilities = capabilities,
-    cmd = { "/home/jaco/code/omnisharp/OmniSharp", "--languageserver", '--hostPID', tostring(pid) },
+    cmd = { "/home/jaco/code/omnisharp/OmniSharp", "--languageserver" },
 
     handlers = {
         ["textDocument/definition"] = require('omnisharp_extended').handler,
-        ["textDocument/hover"] = vim.lsp.with(cs_hover, {border = "rounded"}),
+        ["textDocument/hover"] = vim.lsp.with(cs_hover, {}),
     },
 
     -- Enables support for reading code style, naming convention and analyzer
@@ -248,8 +248,8 @@ cmp.setup {
     formatting = {
         format = lspkind.cmp_format()
     },
-    window = {
-        completion = cmp.config.window.bordered(),
-        documentation = cmp.config.window.bordered()
-    }
+    -- window = {
+    --     completion = cmp.config.window.bordered(),
+    --     documentation = cmp.config.window.bordered()
+    -- }
 }
