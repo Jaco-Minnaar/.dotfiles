@@ -45,3 +45,5 @@
 --     vim.lsp.stop_client(lsp_id, true)
 --     lsp_id = start_lsp()
 -- end)
+
+-- require("jaco.custom.proto_ls").setup()
