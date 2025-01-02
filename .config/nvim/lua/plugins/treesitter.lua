@@ -50,7 +50,7 @@ return {
 			incremental_selection = {
 				enable = true,
 				keymaps = {
-					init_selection = "<CR>",
+					init_selection = "gnn",
 					node_incremental = "<CR>",
 					scope_incremental = "grc",
 					node_decremental = "<BS>",

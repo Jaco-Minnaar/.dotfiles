@@ -8,6 +8,7 @@ return {
 			component_separators = "|",
 			section_separators = "",
 			globalstatus = true,
+			theme = "gruvbox",
 		},
 		sections = {
 			lualine_a = { "mode" },

@@ -11,9 +11,5 @@ return {
 		},
 		transparent_mode = true,
 	},
-	config = function()
-		vim.o.background = "dark"
-		vim.cmd.colorscheme("gruvbox")
-	end,
-	enabled = false,
+	enabled = true,
 }

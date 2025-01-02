@@ -2,7 +2,7 @@ return {
 	"nvim-telescope/telescope.nvim",
 	lazy = true,
 	dependencies = { "nvim-lua/plenary.nvim", "folke/trouble.nvim" },
-	opt = {
+	opts = {
 		defaults = {
 			prompt_prefix = "$ ",
 			layout_config = { prompt_position = "top" },

@@ -8,4 +8,5 @@ return {
 	init = function()
 		vim.cmd.colorscheme("monokai-pro")
 	end,
+	enabled = false,
 }
