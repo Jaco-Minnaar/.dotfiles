@@ -1,0 +1,3613 @@
+git log --pretty=%h»¦«%aN»¦«%s»¦«%aD | lines | split column "»¦«" sha1 committer desc merged_at | histogram committer merger | sort-by merger | reverse
+cd src/bscglobal/proxy-server/
+git log --pretty=%h»¦«%aN»¦«%s»¦«%aD | lines | split column "»¦«" sha1 committer desc merged_at | histogram committer merger | sort-by merger | reverse
+cd
+ls
+cd nushell
+cd .config/nushell/
+nvimi
+$nu.vendor-autoload-dirs
+cd ../zsh
+zsh
+nvim
+$env.paths
+$env.path
+tfire
+$env.home
+$env.path
+zig --help
+carapace
+paru -S carapace
+cd ..
+cd paru
+ls -la
+ls 
+cd nushell/
+bat env.nu 
+cd ../bat
+ls
+nvim config
+bat --list-themes
+nvim config
+bat config
+bat --help
+bat cache
+bat cache --build
+help
+bat --help | help
+zoxide
+cd ../zsh
+nvim
+zoxide --help | help
+zoxide init --help | help
+z 
+zoxide init nushell
+nu --version
+$nu.env-path
+cd ../nushell/
+cd jaco/
+ls
+zoxide init nushell | save -f zoxide.nu
+bat zoxide.nu 
+nvim
+z
+z -
+zellij
+z genesis
+cd ..
+z clientapp
+nvim
+btop
+cd ..
+ls
+zsh
+cd ClientApp/
+npm start 
+z nushell
+z zsh
+dotnet run
+podman run --rm -it -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=Adm1n@12' -p 1433:1433 -v sqlvolume:/var/opt/mssql --name genesis_dev_db mcr.microsoft.com/mssql/server:2019-latest
+nvim
+nvim
+nvim
+z nushell
+:q
+$env.n_prefix
+$env
+n --help | help
+nvim
+z clientapp
+z clientapp
+cd ..
+cd ClientApp/
+cd zellij
+z zellij
+zellij --help | help
+zellij kill-all-sessions
+zellij list-sessions
+zellij --help | help
+zellij delete-all-sessions
+z zellij
+nvim
+zellij
+zellij list-sessions
+zellij delete-all-sessions
+zellij
+zellij list-sessions
+z zellij
+nvim
+zellij
+zellij --layout genesis
+z zellij
+nvim
+zellij
+zellij kill-all-sessions
+zellij --layout genesis
+zellij delete-all-sessions
+zellij kill-all-sessions
+z zellij
+nvim
+zellij --layout genesis
+nvim 
+zellij --layout genesis
+zellij kill-all-sessions
+nvim
+zellij --layout genesis
+nvim
+zellij --layout genesis
+zellij --help | help
+zellij -s config
+zellij --layout genesis
+zellij a config
+zellij --layout genesis
+zellij a config
+zellij --layout genesis
+zellij a config
+zellij list-sessions
+zellij kill-session triangular-xylophone
+z zellij
+zellij --layout genesis
+zellij kill-all-sessions
+zellij --layout genesis
+zellij
+zellij list-sessions
+z zellij
+nvim 
+zellij a
+zellij kill-all-sessions
+podman container ps
+podman container ps -a
+z personal
+mkdir zswitch
+cd zswitch/
+cargo init
+cd ..
+rm -rf zswitch/
+git clone git@github.com:zellij-org/rust-plugin-example.git
+mv rust-plugin-example/ zswitch
+cd zswitch/
+cd ..
+ls
+cd budgetry/api/
+bat Cargo.toml 
+z zswitch
+rustup add wasm32-wasi
+rustup toolchain add wasm32-wasi
+rustup toolchain --help | help
+rustup toolchain install wasm32-wasi
+rustup toolchain install --help | help
+rustup --help | help
+rustup target
+rustup target list
+rustup target install wasm32-wasi
+rustup target install --help
+rustup target install --toolchain stable wasm32-wasi
+cargo install wasm-pack
+cargo build
+rustup target install wasm32-wasi
+rustup target install wasm32-wasip
+rustup target install wasm32-wasip1
+cargo build
+nvim
+zellij --layout genesis
+z zswitch
+bat src/main.rs 
+zellij -l zellij.kdl
+zellij list-sessions
+zellij kill-session newt
+zellij kill-session effulgent-newt
+cargo build
+cargo --help | help
+cargo --list
+cargo tree
+cargo --list
+ls
+rm Cargo.lock
+cargo build
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+z zellij
+cargo build
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+nvim
+z personal
+git clone git@github.com:zellij-org/zellij.git
+cd zellij
+cd default-plugins/session-manager/
+nordlayer --help
+nordlayer status
+nordlayer disconnect
+sudo systemctl status nordlayer 
+sudo systemctl disable nordlayer 
+sudo systemctl stop nordlayer 
+sudo systemctl status nordlayer 
+nordlayer status
+zsh
+nvim
+cargo build
+z .state/nvim
+z state/nvim
+tail -n 100 lsp.log 
+rustup component add rust-analyzer
+rustup update
+cd -
+rustup component add rust-analyzer
+cargo build
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+nvim
+cargo build
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build && zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build and zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build 'and' zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build (and) zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build; zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+z zellij
+nvim
+cd -
+cargo build
+z zellij
+nvim
+cd ../../
+cd zellij-tile/
+rg SessionUpdate
+ls
+cd src
+ls
+bat prelude.rs 
+cd ../..
+cd zellij-tile-utils/
+rg SessionUpdate
+rg "SessionUpdate"
+ls
+cd src/
+ls
+bat lib.rs 
+cd ../..
+ls
+rg "SessionUpdate"
+cd ../..
+rg "SessionUpdate"
+zellij action
+zellij action | grep plugin
+zellij action | find plugin
+zellij action 
+zellij action | ignore
+zellij action 
+zellij action --help
+zellij action --help | find plugin
+zellij action --help | find close
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build
+zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+cargo build; zellij action start-or-reload-plugin file:target/wasm32-wasip1/debug/zswitch.wasm
+zellij pipe --plugin file:target/wasm32-wasip1/debug/zswitch.wasm --name switch -- next
+btop
+cargo build --release
+cp target/wasm32-wasip1/release/zswitch.wasm ~/.config/zellij/
+nvim
+zellij
+nvim
+zellij
+nvim
+zellij
+nvim
+zellij
+nvim
+zellij
+zellij kill-all-sessions
+z zswitch
+cargo build --release
+cp target/wasm32-wasip1/release/zswitch.wasm ~/.config/zellij/
+nvim
+zellij
+zellij kill-all-sessions
+zellij
+zellij kill-all-sessions
+zellij
+zellij --help | help
+zellij plugin --help
+nvim
+z zellij
+nvim
+z zswitch
+nvim
+cargo build --release
+cp target/wasm32-wasip1/release/zswitch.wasm ~/.config/zellij/plugins/
+zellij
+nvim
+z genesis
+nvim
+zellij a
+zellij
+cd
+btop
+zellij
+cd zswitch
+z zswitch
+rm -r .git
+git init
+git add -A
+git status
+git commit -m
+git commit 
+git commit -m 'initial commit'
+git remote add origin git@github.com:Jaco-Minnaar/zswitch.git
+git push -u origin main
+git add -A 
+git commit -m 'update README'
+git push
+nvim
+git log --help | help
+git log --show-signature
+z zswitch
+cargo build --help
+git pull
+git checkout -b action
+cargo --help
+cargo --list
+cargo version
+cargo info
+cargo info --help
+cargo info .
+cargo info ./
+cargo --list
+cargo report
+cargo --list
+cargo metadata
+cargo --list
+cargo read-manifest
+cargo help read-manifest 
+cargo --list
+cargo help info
+cargo info zswitch
+cargo help info
+cargo info zswitch
+cargo help info
+cargo info zswitch --color never
+cargo info zswitch --color never | grep version
+cargo info zswitch --color never | grep version:
+cargo info zswitch --color never | grep ^version:
+zsh
+cargo info zswitch --color never | grep ^version:
+cargo info zswitch --color never | grep ^version: | sed 's/^.*\s(.*)\s.*$/1'
+cargo info zswitch --color never | grep ^version: | sed 's/^.*\s(.*)\s.*$/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*\s(.*)\s.*/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/v/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*?\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*+\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s/\1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s/$1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s(\d+\.\d+\.\d+(-.*)?)\s.*/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s(\d+\.\d+\.\d+(-.*)?)\s.*/\1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\\s(\d+\.\d+\.\d+(-.*)?)\s.*/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s(\d+\.\d+\.\d+(-.*)?)\s.*/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s(\d)/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s\(\d\)/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s(\d)/1/g'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s\d/1/g'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s\d/1/g'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s/1/g'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s\d/1/g'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s\d/1/'
+cargo info zswitch --color never | grep ^version: | sed 's/.*:\s([0-9]+\.[0-9]+\.[0-9]+(-.*)?)\s.*/1/g'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s[0-9]+/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+)/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+\.)/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+\.[0-9]+)/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+\.[0-9]+\.[0-9]+)/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+\.[0-9]+\.[0-9]+(-.*)?)/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+\.[0-9]+\.[0-9]+(-.*)?)\s/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/.*:\s([0-9]+\.[0-9]+\.[0-9]+(-.*)?)\s.*/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/^.*:\s([0-9]+\.[0-9]+\.[0-9]+(-.*)?)\s.*$/1/'
+cargo info zswitch --color never | grep ^version: | sed -E 's/^.*:\s([0-9]+\.[0-9]+\.[0-9]+(-.*)?)\s.*$/\1/'
+chmod +x ./scripts/release.sh 
+./scripts/release.sh
+cargo info zswitch --color never | find version
+cargo info zswitch --color never | find ^version
+cargo info zswitch --color never | find "^version"
+cargo info zswitch --color never | find -r "^version"
+cargo info zswitch --color never | find --regex "^version"
+cargo info zswitch --color never | find --regex "^version" | split row ' '
+cargo info zswitch --color never
+cargo info zswitch --color never | find version
+cargo info zswitch --color never | filter {|s| str starts-with "version" }
+cargo info zswitch --color never | filter {|s| str starts-with "version"}
+cargo info zswitch --color never | filter {|s| str starts-with "v"}
+cargo info zswitch --color never | filter {|s| true}
+cargo info zswitch --color never | rows | filter {|s| true}
+cargo info zswitch --color never | lines | filter {|s| true}
+cargo info zswitch --color never | lines | filter {|s| str starts-with "version"}
+cargo info zswitch --color never | lines | filter {|s| str starts-with "version"} | split row ' '
+cargo info zswitch --color never | lines | filter {|s| str starts-with "version"} | split row ' ' | find -r "\d+\.\d+\.\d+(-.*)?"
+cargo info zswitch --color never | lines | filter {|s| str starts-with "version"} | split row ' ' | find -r '\d+\.\d+\.\d+(-.*)?'
+cargo info zswitch --color never | lines | filter {|s| str starts-with "version"} | split row ' ' | find -r '\d+\.\d+\.\d+(-.*)?' | first
+ls scripts/
+ls -al scripts/
+./scripts/release.nu
+gh --help
+paru -S gh
+paru -S github-cli
+./scripts/release.nu
+gh auth login
+./scripts/release.nu
+btop
+./scripts/release.nu
+gh api --help
+./scripts/release.nu
+curl --help
+help curl
+curl --help upload
+./scripts/release.nu
+gh release --help
+gh release upload
+gh release upload --help
+gh release create --help
+./scripts/release.nu
+nvim
+cd sr
+z personal
+mkdir nushell-action
+cd nushell-action/
+cargo init
+cargo add reqwest
+cargo add flate2
+podman build
+podman build --help
+podman build -t action-test .
+cd ..
+rg disable
+rg disable-default
+rm -r zvm-rs/tar_test/zig-linux-x86_64-0.13.0/
+rg disable-default
+rm -r zvm-rs/cmp/zig-linux-x86_64-0.13.0/
+rg disable-default
+rg defatul
+rg default
+rg --help
+rg --help | help
+rg -f "*.toml" default
+rg --help | help
+rg -g "*.toml" default
+cargo build
+podman build -t action-test .
+cargo tree
+cargo tree | bat
+podman build -t action-test .
+cargo add serde -F derive
+cargo add serde_json
+nvim
+zsh
+cargo add tart
+cargo add tar
+cargo run
+ls
+cd nu-0.101.0-x86_64-unknown-linux-gnu/
+ls
+cd ..
+rm -rf nu-0.101.0-x86_64-unknown-linux-gnu/
+ls
+podman build -t action-test .
+man ld
+podman build -t action-test .
+zellij --layout genesis
+cd zswitch
+z zswitch
+wget --help
+wget --help | help
+wget https://github.com/nushell/nushell/releases/download/0.101.0/nu-0.101.0-x86_64-unknown-linux-gnu.tar.gz
+ls
+tar -xvf nu-0.101.0-x86_64-unknown-linux-gnu.tar.gz 
+ls
+which nu
+ls -al /usr/bin/nu
+ls nu-0.101.0-x86_64-unknown-linux-gnu/
+chmod +x ./scripts/install_nushell.sh 
+lazygit
+ls -la ~/.config/zellij/plugins/zswitch.wasm
+paru
+nvim
+lazygit
+zellij a
+nvim .config/zellij/layouts/genesis.kdl 
+z nvim
+z .config/nvim
+nvim
+z personal
+ls
+mkdir zig-brc
+cd zig-brc/
+cd ..
+ls
+cd ..
+ls
+cd personal/
+git clone git@github.com:gunnarmorling/1brc.git
+cd 1brc/
+ls
+./mvnw clean verify
+java --helkp
+java --version
+paru -S jdk21-openjdk
+paru -S java-runtime-common
+archlinux-java
+archlinux-java status
+sudo archlinux-java set java-21-openjdk/jre
+cd /usr/lib/jvm/
+ls
+cd java-21-openjdk/
+ls
+cd
+sudo archlinux-java set java-21-openjdk
+z 1brc
+./mvnw clean verify
+./create_measurements.sh 1000000000
+ls
+./calculate_average_jerrinot.sh
+./prepare_jerrinot.sh
+paru -S sdkman
+./calculate_average_jerrinot.sh > baseline.txt
+./calculate_average_jerrinot.sh | save baseline
+bat baseline
+mv measurements.txt ../zig-brc/
+mv baseline ../zig-brc/
+cd ..
+mv zig-brc/
+mv zig-brc/ 1brc-zig
+cd 1brc-zig/
+ls
+zig init
+btop
+z 1brc-zig
+zig build
+bat baseline
+zig build
+zig build run
+head measurements.txt 
+zig build
+zig build run
+head measurements.txt 
+zig build run
+head measurements.txt 
+zig build run
+node
+z zig-bin
+ls
+rm zig-linux-x86_64-0.14.0-dev.2851+b074fb7dd.tar.xz*
+ls
+ls bin
+curl https://ziglang.org/download/index.json
+curl https://ziglang.org/download/index.json | to json
+curl https://ziglang.org/download/index.json | from json
+curl https://ziglang.org/download/index.json | from json | get master
+curl https://ziglang.org/download/index.json | from json | get master.x86_64-linux
+curl https://ziglang.org/download/index.json | from json | get master.x86_64-linux.tarball
+curl https://ziglang.org/download/index.json | from json | curl | tar -xvf
+curl --help
+man curl
+curl https://ziglang.org/download/index.json | from json | curl - | tar -xvf 
+man tar
+curl https://ziglang.org/download/index.json | from json | curl - | tar -xz
+man curl
+curl https://ziglang.org/download/index.json | from json | curl $in | tar -xz
+curl https://ziglang.org/download/index.json | from json | get master.x86_64-linux.tarball | curl $in
+curl https://ziglang.org/download/index.json | from json | get master.x86_64-linux.tarball | curl $in | tar -xv
+man tar
+curl https://ziglang.org/download/index.json | from json | get master.x86_64-linux.tarball | curl $in | tar -Jxv
+ls
+cd zig-linux-x86_64-0.14.0-dev.2989+bf6ee7cb3/
+ls
+cd ..
+cd bin
+ls
+ln -s /home/jaco/code/zig-bins/zig-linux-x86_64-0.14.0-dev.2989+bf6ee7cb3/zig zig
+unlink zig
+ln -s /home/jaco/code/zig-bins/zig-linux-x86_64-0.14.0-dev.2989+bf6ee7cb3/zig zig
+cd
+zig --version
+zig version
+zig clean
+ls
+ls -al
+rm -r .zig-cache/ zig-out/
+zig build
+zig build run
+head measurements.txt 
+zig build run
+zsh
+zig build run --release=fast
+bat baseline
+zig build run --release=fast
+bat results 
+bat baseline
+diff baseline results
+open baseline
+open baseline | str trim --char '}'
+open baseline | str trim 
+open baseline | str trim --char '}'
+open --raw baseline 
+open --raw baseline | str trim --char '}'
+open --raw baseline | str ends-with }
+open --raw baseline | str ends-with '}'
+open --raw baseline | str ends-with ' '
+open --raw baseline | str starts-with '{'
+open --raw baseline | str trim '{'
+open --raw baseline | str trim --char '{'
+open --raw baseline | str trim --char '{' | str trim
+open --raw baseline | str trim --char '{' | str trim | str trim --char '{'
+open --raw baseline | str trim --char '{' | str trim | str trim --char '}'
+open --raw baseline | str trim --char '{' | str trim | str trim --char '}' | split row ', '
+open --raw baseline | str trim --char '{' | str trim | str trim --char '}' | split row ', ' | each { |r| $r  }
+open --raw baseline | str trim --char '{' | str trim | str trim --char '}' | split row ', ' | each { |r| $r | split row '=' }
+open --raw baseline | str trim --char '{' | str trim | str trim --char '}' | split row ', ' | each { |r| $r | split row '=' | |r| { ($r | get 0): ($r | get 1) } }
+chmod +x ./scripts/cmp.nu 
+./scripts/cmp.nu baseline
+bat baseline | grep flores
+bat baseline | grep Flores
+cd src/personal/1brc
+./calculate_average_baseline.sh | save baseline
+mv ../1brc-zig/measurements.txt ./
+./calculate_average_baseline.sh | save baseline
+rm baseline
+./calculate_average_baseline.sh | save baseline
+bat baseline 
+diff baseline ../1brc-zig/baseline 
+mv baseline ../zig-brc/
+mv baseline ../1brc-zig/
+diff baseline ../1brc-zig/baseline 
+./scripts/cmp.nu baseline
+bat baseline 
+./scripts/cmp.nu baseline
+zellij --layout genesis
+zellij a
+bat baseline 
+./scripts/cmp.nu baseline
+./scripts/cmp.nu baseline | first
+./scripts/cmp.nu baseline
+mv ../1brc/measurements.txt ./
+open measurements.txt | find Flores
+rg --help | help
+rg "Flores" measurements.txt 
+bat baseline 
+./scripts/cmp.nu baseline
+./scripts/cmp.nu results
+bat results 
+zig build run --release=fast
+bat results 
+./scripts/cmp.nu results
+./scripts/cmp.nu results baseline
+bat results
+rg "Washington" measurements.txt 
+zig build run --release=fast
+./scripts/cmp.nu results baseline
+zig build run --release=fast
+man memmap
+man memmap2
+man mmap
+man mmap2
+man mmap
+man 2 mmap
+zig build run --release=fast
+man 2 mmap
+zig build run --release=fast
+zig build run 
+zig build run --release=fast
+zig build run 
+mv measurements.txt big.txt
+head -n 1000000 big.txt | write small.txt
+head -n 1000000 big.txt | save small.txt
+cp small.txt measurements.txt
+zig build run 
+ls
+mv big.txt measurements.txt
+ls
+zig build run
+zig build run --release=fast
+zig build run
+zig build run --release=fast
+zig build run
+zig build run --help
+zig build run --release=sage
+zig build run --release=safe
+zig build run --release=fast
+zig build run
+zig build run --release=fast
+zig build run --release=safe
+zig build run --help
+zig build run --release=small
+zig build run
+zig build run --release=small
+zig build run
+zig build run --release=small
+zig build run --release=fast
+zig build run 
+zig build run --release=fast
+node
+python
+zig build run --release=fast
+head small.txt 
+node
+zig build
+zig build run
+zig build run --release=fast
+zig build run
+node
+zig build run
+node
+zig build run
+git init
+git add -A
+lazygit
+zig build run
+zig build run --release=fast
+zig build run
+zig build run --release=fast
+zig build run
+paru
+paru --fm nvim -S nvim-git
+lazygit
+paru
+paru --fm nvim -S neovim-git
+nvim
+btop
+zellij a brc
+node
+zellij a
+cd 1brc-zig/
+z 1brc-zig
+cd .
+cd ..
+z nvim
+nvim
+paru -S jdtls
+z code
+mkdir jdtls
+cd jdtls/
+wget https://www.eclipse.org/downloads/download.php?file=/jdtls/milestones/1.44.0/jdt-language-server-1.44.0-202501221502.tar.gz
+tar -xvf download.php?file=%2Fjdtls%2Fmilestones%2F1.44.0%2Fjdt-language-server-1.44.0-202501221502.tar.gz 
+ls
+rm 'download.php?file=%2Fjdtls%2Fmilestones%2F1.44.0%2Fjdt-language-server-1.44.0-202501221502.tar.gz'
+cd bin
+ls
+cd ../
+z nushell
+nvim
+$env.path
+jdtls
+nvim
+z 1brc-zig
+nvim
+nvim
+lazygit
+nvim
+zellij --layout genesis
+z bugdetry
+z budgetry
+nvim
+cd api
+cd web
+z 1brc-zig
+zig build run --release=fast
+perf record --help
+zig build
+perf record -F 99 --call-dwarf dwarf ./zig-out/bin/1brc-zig
+perf record -F 99 --call-graph dwarf ./zig-out/bin/1brc-zig
+ls
+cd .
+cd ..
+git clone git@github.com:hendriknielaender/zflame.git
+cd zflame/
+zig build --release=small
+nvim
+cd ..
+valgrind
+cd 1brc-zig/
+valgrind --tool=callgrind ./zig-out/bin/1brc-zig
+ls
+valgrind --tool=callgrind .
+callgrind
+callgrind_control
+callgrind_control -h
+callgrind_control 
+callgrind_control -s
+cd ..
+git clone https://github.com/brendangregg/FlameGraph
+cd FlameGraph/
+ls
+callgrind_control -s
+valgrind --tool=callgrind ./zig-out/bin/1brc-zig
+ls
+kcachegrind
+cd ..
+cd web
+pnpm dev
+"eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ" | decode base64
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9" | decode base64
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9" | decode base64 | decode
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9" | decode base64 | decode | into json
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9" | decode base64 | decode | to json
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9" | decode base64 | decode | from json
+"eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ" | decode base64
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ.oQJexcUmh6mmfuOx20mzwGaMnGa2PjOqk3xmOeA6OzopuaCHqwW0pDvcONxYDLet77aAJ2n9xeyl5JwuhemulND9129Bqg8KHDR2CizvHbkmeIhVzlIlGECoXdrbV1k_fKtbmL8z0NKQUF_z74w9L3uiXcZNyJtQdEe2ipTun9mko8Aq8fj4CoNcIsRSIhmpkbOsiUOxAXmfaofSUpBmNr_ZjaFy3sSiItaXJT5cDZf7LZH_zS_C0HnHoORlaKmUtkATSLsF8kgDxanCl3-h76wC7AjpSpepEUIJD2lPd3M_Qen5G_fEwTpHe5JcRluKtGk3u9YuQfUw7JgN8nVKYQ"
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ.oQJexcUmh6mmfuOx20mzwGaMnGa2PjOqk3xmOeA6OzopuaCHqwW0pDvcONxYDLet77aAJ2n9xeyl5JwuhemulND9129Bqg8KHDR2CizvHbkmeIhVzlIlGECoXdrbV1k_fKtbmL8z0NKQUF_z74w9L3uiXcZNyJtQdEe2ipTun9mko8Aq8fj4CoNcIsRSIhmpkbOsiUOxAXmfaofSUpBmNr_ZjaFy3sSiItaXJT5cDZf7LZH_zS_C0HnHoORlaKmUtkATSLsF8kgDxanCl3-h76wC7AjpSpepEUIJD2lPd3M_Qen5G_fEwTpHe5JcRluKtGk3u9YuQfUw7JgN8nVKYQ" | split --char '.'
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ.oQJexcUmh6mmfuOx20mzwGaMnGa2PjOqk3xmOeA6OzopuaCHqwW0pDvcONxYDLet77aAJ2n9xeyl5JwuhemulND9129Bqg8KHDR2CizvHbkmeIhVzlIlGECoXdrbV1k_fKtbmL8z0NKQUF_z74w9L3uiXcZNyJtQdEe2ipTun9mko8Aq8fj4CoNcIsRSIhmpkbOsiUOxAXmfaofSUpBmNr_ZjaFy3sSiItaXJT5cDZf7LZH_zS_C0HnHoORlaKmUtkATSLsF8kgDxanCl3-h76wC7AjpSpepEUIJD2lPd3M_Qen5G_fEwTpHe5JcRluKtGk3u9YuQfUw7JgN8nVKYQ" | split row '.'
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ.oQJexcUmh6mmfuOx20mzwGaMnGa2PjOqk3xmOeA6OzopuaCHqwW0pDvcONxYDLet77aAJ2n9xeyl5JwuhemulND9129Bqg8KHDR2CizvHbkmeIhVzlIlGECoXdrbV1k_fKtbmL8z0NKQUF_z74w9L3uiXcZNyJtQdEe2ipTun9mko8Aq8fj4CoNcIsRSIhmpkbOsiUOxAXmfaofSUpBmNr_ZjaFy3sSiItaXJT5cDZf7LZH_zS_C0HnHoORlaKmUtkATSLsF8kgDxanCl3-h76wC7AjpSpepEUIJD2lPd3M_Qen5G_fEwTpHe5JcRluKtGk3u9YuQfUw7JgN8nVKYQ" | split row '.' | first 2
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ.oQJexcUmh6mmfuOx20mzwGaMnGa2PjOqk3xmOeA6OzopuaCHqwW0pDvcONxYDLet77aAJ2n9xeyl5JwuhemulND9129Bqg8KHDR2CizvHbkmeIhVzlIlGECoXdrbV1k_fKtbmL8z0NKQUF_z74w9L3uiXcZNyJtQdEe2ipTun9mko8Aq8fj4CoNcIsRSIhmpkbOsiUOxAXmfaofSUpBmNr_ZjaFy3sSiItaXJT5cDZf7LZH_zS_C0HnHoORlaKmUtkATSLsF8kgDxanCl3-h76wC7AjpSpepEUIJD2lPd3M_Qen5G_fEwTpHe5JcRluKtGk3u9YuQfUw7JgN8nVKYQ" | split row '.' | first 2 | each { |r| $r | decode }
+"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ.oQJexcUmh6mmfuOx20mzwGaMnGa2PjOqk3xmOeA6OzopuaCHqwW0pDvcONxYDLet77aAJ2n9xeyl5JwuhemulND9129Bqg8KHDR2CizvHbkmeIhVzlIlGECoXdrbV1k_fKtbmL8z0NKQUF_z74w9L3uiXcZNyJtQdEe2ipTun9mko8Aq8fj4CoNcIsRSIhmpkbOsiUOxAXmfaofSUpBmNr_ZjaFy3sSiItaXJT5cDZf7LZH_zS_C0HnHoORlaKmUtkATSLsF8kgDxanCl3-h76wC7AjpSpepEUIJD2lPd3M_Qen5G_fEwTpHe5JcRluKtGk3u9YuQfUw7JgN8nVKYQ" | split row '.' | first 2 | each { |r| $r | decode base64 | decode }
+"eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ" | decode base64
+"eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ" | decode base64 --url
+"eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ"
+"eyJleHAiOjE3MzgzMTUwODMsImlhdCI6MTczODMxMzg4Mywic3ViIjoxfQ" | decode base64
+z zellij
+nvim
+cargo clippy
+cargo watch -x run
+cargo clean
+rustup --help
+rustup toolchain
+rustup toolchain list
+cargo build
+rustup default stable
+cargo clippy
+cargo build
+z server
+cargo add axum
+cargo build
+z zellij
+nvim
+nvim
+nvim
+lazygit
+nvim
+nvim
+zellij a
+z budgetry
+cd api
+zellij
+zellij a
+zellij kill-all-sessions
+z zellij
+nvim
+zellij
+nvim
+zellij
+nvim config.kdl 
+z budgetry
+cd api
+cargo build
+nvim
+cd ../web
+cd ..
+cd web
+cd ../web
+openssl rsa -in keypair.pem -pubout -out key.pub
+openssl rsa -in key -pubout -out key.pub
+ls
+ls -la
+bat key.pub
+paru -S pkgconf
+cargo add openssl-sys
+cargo add openssl
+sqlite3 dev.sqlite
+cargo add tracing_errpr
+cargo add tracing_error
+cargo add thiserror
+cargo build
+cargo add anyhow
+cargo add anyhow -F backtrace
+cargo build
+cargo watch -x run
+zsh 
+nvim
+cd ../web
+./scripts/proto_generate.sh
+pnpm dev
+pnpm install dayjs
+npm install tailwindcss @tailwindcss/vite
+pnpm install tailwindcss @tailwindcc/vite
+pnpm install tailwindcss @tailwindcss/vite
+pnpm dev
+nvim
+pnpm dev
+pnpm install @solid-mediakit/auth-plugin
+pnpm dev
+pnpm install
+pnpm dev
+pnpm install
+pnpm dev
+nvim
+cd ../web
+pnpm install
+pnpm dev
+cd
+ls
+cd code
+ls
+cd scripts/
+ls
+bat npm_install_g 
+npm install -g @tailwindcss/language-server
+pnpm install -D prettier prettier-plugin-tailwindcss
+nvim
+npm install -g prettierd
+npm install -g @fsouza/prettierd
+npm install -g prettier
+./npm_install_g
+nvim
+z nvim
+nvim
+pnpm install solid-icons
+pnpm dev
+lazygit
+nvim
+cargo watch -i "dev.sqlite*" --why -x run
+btop
+zellij
+paru
+paru --fm nvim -S neovim-git
+flatpak update
+z budgetry
+ls
+cd api
+which nu
+cd ../web
+nvim
+nvim
+nvim
+cd ../web
+cd code
+z code
+ls
+mkdir azure-naming 
+cd azure-naming/
+wget https://github.com/mspnp/AzureNamingTool/releases/download/v4.3.0/AzureNamingTool.zip
+unzip AzureNamingTool.zip 
+ls
+rm AzureNamingTool.zip
+podman build -t azurenamingtool .
+cargo add time
+cargo add time -F formatting
+pnpm dev
+sqlite3 dev.sqlite
+paru -S dbeaver
+dbeaver
+z personal
+cd zig
+mkdir zlox
+cd zlox/
+zig init
+zig --version
+zig version
+zig build
+zig build -freference-trace=7
+zig build run
+nvim
+zellij
+nvim
+cd ../
+cd web
+./scripts/proto_generate.sh
+nvim
+pnpm dev
+./scripts/proto_generate.sh
+cd ..
+tokei
+tokei --help
+tokei --help | help
+tree
+exa --help
+exa --help | help
+exa --tree
+exa --tree --help
+exa --tree --help | help
+exa --tree --git-ignore
+tokei --help | help
+tokei --exclude pnpm-lock.yml
+tokei --exclude pnpm-lock.yaml
+exa --tree --git-ignore
+tokei --exclude pnpm-lock.yaml --exclude "**/lib/proto"
+paru -S zen-browser-bin
+cargo watch -i "dev.sqlite*" --why -x run
+paru
+paru --fm nvim -S neovim-git
+lazygit
+nvim
+nvim
+btop
+podman run --rm -it -p 8081:8081 --mount type=volume,source=azurenamingtoolvol,target=/app/settings -e "ASPNETCORE_URLS=http://+:8081" azurenamingtool:latest
+zellij a
+z personal
+ls
+ls -al
+ls 
+cd ..
+ls 
+cd bscglobal/
+ls
+cd qerent-for-ps-data-api/
+git pull
+cd ..
+git clone git@ssh.dev.azure.com:v3/bscglobal/story-chart/py-storychart-ui-tester
+mkdir storychart
+ls
+cd storychart
+ls
+cd ..
+mv py-storychart-ui-tester/ storychart/
+cd storychart/
+ls
+cd py-storychart-ui-tester/
+z budgetry
+cd api
+cd web
+cd ../web
+cd ../api
+nvim
+nvim
+lazygit
+pnpm dev
+cargo watch -i "dev.sqlite*" --why -x run
+zellij
+z budgetry
+cd api
+cd ../
+cd web
+z server
+corepack enable
+corepack prepare pnpm@latest --activate
+corepack prepare --help
+corepack --help
+tldr 
+tldr corepack
+corepack --help
+corepack prepare
+corepack prepare pnpm
+corepack prepare pnpm --activate
+corepack install
+corepack install -g pnpm@latest
+corepack install -g pnpm
+corepack --version
+n --help | help
+n lts
+$env
+z nushell
+$env
+nvim
+nvim
+zellij a
+zellij
+lazygit
+nvim
+nvim
+zellij a bgt
+lazygit
+nvim
+zellij a
+$env.N_PATH
+$env
+$env.N_PREFIX
+n
+n lts
+sh
+z nushell
+nvim
+$env
+z nushell
+nvim
+$env
+btop
+$env.path
+cd /root
+su
+ls -la
+bat .bashrc
+h2 --help
+bat .zshenv 
+mv .zshenv old.zshenv
+zellij
+cd .config/ghostty/
+ls
+nvim config 
+ls -la /bin/sh
+ls
+chsh
+z nushell
+nvim
+z ghostty
+nvim
+which nu
+nvim
+zellij
+nvim
+z nushell
+nvim
+$env
+nvim
+n lts
+corepack --version
+z server
+z zellij
+nvim
+cd
+z server
+corepack prepare pnpm --activate
+corepack prepare pnpm@latest-10 --activate
+npm install -g corepack@latest
+n --help | help
+n latest
+man n
+which npm
+npm install -g npm@latest
+npm --version
+npm install -g corepack@latest
+corepack prepare pnpm@latest-10 --activate
+corepack --version
+z budgetry
+cd api
+cd web
+cd ../web
+nvim
+cd ../web
+./scripts/proto_generate.sh
+nvim
+cargo build
+cd ../api
+cargo build
+rm Cargo.lock
+nvim
+cargo build
+cargo watch -i "dev.sqlite*" --why -x run
+rustup update
+cargo build
+lazygit
+pnpm dev
+zellij
+z bsc
+ls
+cd storychart/
+ls
+cd py-storychart-ui-tester/
+ls
+cd ../..
+cd qerent-for-ps-data-api/
+ls
+cd _test
+ls
+cd test_e2e
+ls
+cd utuls
+cd utils
+ls
+rm -rf __pycache__/
+ls
+cp * ~/src/bscglobal/storychart/py-storychart-ui-tester/bsc/ui-tester/
+cp -r * ~/src/bscglobal/storychart/py-storychart-ui-tester/bsc/ui-tester/
+cd ..
+ls
+cp base_page.py ~/src/bscglobal/storychart/py-storychart-ui-tester/bsc/ui-tester/
+nvim
+cd ../..
+nvim
+pyenv
+pyenv local
+pyenv local --help
+pyenv local --help 3.10
+pyenv local 3.10
+ls
+pyenv
+pyenv local
+pip install artifacts-keyring
+zsh
+cd
+mv old.zshenv .zshenv
+python -m venv .venv
+./.venv/bin/activate
+bat .venv/bin/activate 
+nix --help
+nix upgrade-nix
+sudo nix upgrade-nix
+z nvim
+nix-shell
+zsh
+nix-shell
+$env
+nix-shell --command nu
+nix-shell --pure --command nu
+ping 1.1.1.1
+z personal
+mkdir nushell-nix
+cd nushell-nix/
+nix-build
+ls
+./result
+ls
+cd ..
+./result/bin/hello
+nix-prefetch-url --unpack https://github.com/nushell/nushell/archive/refs/tags/0.102.0.tar.gz --type sha256
+asdfasdfas
+nix-build
+nvim
+zellij a nix
+rm -rf .venv
+paru -S python-virtualenv
+python -m virtualenv .venv
+ls -la
+overlay use .venv/bin/activate.nu
+pip install artifacts-keyring
+python --version
+rm -rf .venv
+z bsc
+cd storychart/
+ls
+cd py-storychart-ui-tester/
+ls
+pyenv local
+pip install virtualenv
+python --version
+pyenv
+pyenv local
+python --version
+pyenv --help
+pyenv init
+nvim
+z nushell
+pyenv init - nu | write test
+pyenv init - nu | save test
+ls
+bat test
+pyenv init --help
+bash p.bash 
+z tester
+pyenv
+pyenv local
+pyenv local --help
+pyenv local
+pyenv local help
+z tester
+pyenv local help
+pyenv local 
+pyenv local --help
+pyenv local --too
+z tester
+pyenv
+pyenv local
+pyenv local --too
+pyenv local --help
+z tester
+python --version
+pyenv rehash
+which python
+cd 
+cd .pyenv/
+ls
+cd shims/
+ls
+$env.path
+z tester
+$env.path
+z tester
+$nu.vendor-autoload-dirs
+$env.XDG_DATA_DIRS
+cd
+bat .zshenv 
+$env.XDG_DATA_DIRS
+$nu.vendor-autoload-dirs
+$env.XDG_DATA_HOME
+nvim .bash_profile
+bash
+z nushell
+cd .config/nushell/
+z tester
+bash
+$nu.vendor-autoload-dirs
+$env.XDG_DATA_HOME
+$env.XDG_DATA_DIRS
+$nu.vendor-autoload-dirs
+$env.PATH
+nvim .bashrc
+z tester
+pyenv
+z tester
+z
+z --help
+zoxide init nushell
+$env.PATH
+bash
+bash
+$env.PATH
+bash
+zellij a
+$env.PATH
+zellij a
+zellij a nu
+zellij kill-all-sessions
+z ghostty
+nvim config 
+which zellijj
+which zellij
+nvim config 
+nvim config
+z ghostty
+nvim
+z ghostty
+nvim config 
+z ghostty
+nvim config 
+z ghostty
+nvim config
+z ghostty
+nvim config
+z ghostty
+ghostty --help
+ghostty +show-config
+nvim config
+ghostty +show-config | bat --plain
+z tester
+nvim
+z ghostty
+nvim config 
+btop
+z ghostty
+nvim
+z ghostty
+nvim
+z ghostty
+nvim config 
+ghostty
+cd src/personal/
+ls
+cd zig
+ls
+cd ..
+ls
+ls | get name
+ls --help
+ls
+ls | get name
+ls | get name | detect columns
+ls | get name | detect column
+ls -s
+ls --help
+help ls
+z nushell
+nvim
+lsg
+z nushell
+nvim
+lsg
+nvim
+z nushell
+nvim config.nu 
+nvim --help | help
+nvim --help
+nvim
+lsg
+ls -s ""
+z nushell
+lsg
+z personal
+lsg
+ls
+lsg
+z personal
+lsg
+ls
+z personal
+ls
+cd zig
+ls
+cd os
+nvim
+z personal
+ls
+cd zig/os
+make
+cd ../..
+ls
+cd zig
+ls
+cd ..
+cd zig
+mkdir example
+cd example/
+zig init
+z personal
+git clone git@github.com:phil-opp/blog_os.git
+ls
+cd blog_os/
+rg "if you want"
+rg "yourself"
+rg "understanding"
+make
+nvim
+make
+make run
+cd ..
+cd budgetry/
+cd api
+z personal
+git clone git@github.com:rust-osdev/multiboot2.git
+cd multiboot2/
+cargo build
+nvim
+node
+make
+;
+make
+make run
+nvim
+make run
+make
+make run
+nvim
+lazygit
+zellij
+paru
+paru --fm nvim -S neovim-git
+paru -S treesitter-git
+paru -S tree-sitter-git
+paru -R tree-sitter
+paru -S tree-sitter-git
+paru
+z testing
+z tester
+z nushell
+nvim
+ls
+ls -la
+cd -
+cd ../..
+cd qerent-for-ps-data-api/
+sudo systemctl status nordlayer 
+sudo systemctl start nordlayer 
+sudo systemctl status nordlayer 
+nordlayer connect
+nordlayer login
+ping 1.1.1.1
+z zig-os
+z zig
+ls
+z os
+ls
+make run
+z multiboot2
+make run
+168 / 24
+make run
+168 / 32
+64 * 3
+192 / 8
+make run
+gpg --edit-key
+gpg --help
+gpg --help | help
+gpg -k
+gpg --edit-key jminnaar@bscglobal.com
+zsh
+make run
+0x1
+0x2
+0x4
+0b1
+0b10
+0b100
+cd ../..
+cd multiboot2/
+make run
+objdump
+objdump -h out/kernel.elf
+make run
+objdump -h out/kernel.elf
+make run
+64 * 8
+make run
+128 / 8
+make run
+z os
+make run
+64 + 64 + 32
+160 / 8
+make run
+128 / 8
+make run
+objdump -h out/kernel.elf
+0x10a148
+0x10a148 / 8
+make run
+64 ** 64
+64 * 8
+make run
+btop
+564 / 64
+make run
+objdump -h out/kernel.elf
+make run
+0x10a148
+0x10a188
+0x10a148 + 512
+make run
+objdump -h out/kernel.elf
+make run
+0x10a148
+0x10a188 - 0x10a148
+make run
+objdump -h out/kernel.elf
+make run
+nvim
+make run
+0xff
+0x1000
+0x10140000
+nvim
+make run
+64 * 8
+16 * 4
+objdump -h out/kernel.elf
+make run
+objdump -h out/kernel.elf --help
+objdump --help
+objdump -h out/kernel.elf 
+z ghostty
+nvim config 
+nvim
+lazygit
+make run
+nvim
+lazygit
+make run
+objdump -h out/kernel.elf 
+make run
+zig build 
+zig build -freference-trace=7
+make run
+objdump -h out/kernel.elf 
+make run
+objdump --help | help
+btop
+nvim
+lazygit
+paru
+cd 
+cd src/personal
+mkdir markdown-preview
+cd markdown-preview/
+pnpm create solid
+ls
+bat package.json 
+pnpm add micromark
+corepack install -g pnpm@10.2.1
+corepack --help
+corepack up
+pnpm dev
+pnpm add @tailwindcss/vite
+cd ..
+cd budgetry/
+ls
+cd web
+pnpm dev
+pnpm add tailwindcss
+nvim
+cd ..
+cd bscglobal/
+git clone git@ssh.dev.azure.com:v3/bscglobal/bsclib/rs-bsc-dev
+cd rs-bsc-dev/
+cargo build
+cargo install -p .
+cargo install --help
+cargo install --path .
+uv
+paru -S uv
+uv --version
+cd
+bsc-dev --version
+pnpm dev
+cd 
+ls -la .nix-profile
+zsh
+z markdown
+ls
+z budgetry
+cd web
+nvim
+nvim
+pnpm dev
+pnpm add micromark-extension-gfm-table
+z os
+make run
+596 / 8
+make run
+nvim
+pnpm dev
+29 + 32
+objdump -h out/kernel.elf 
+make run
+0x100
+0x1
+0x11
+0b1
+0b1000
+0b10000
+0b10001
+0b1001
+make run
+596 / 8
+600 / 8
+make run
+z multiboot2
+make run
+32 * 8
+make run
+objdump -h out/kernel.elf 
+make run
+nvim
+nvim
+lazygit
+z os
+nvim
+lazyigt
+nvim
+make 
+make run
+nvim
+lazygit
+make run
+3178469 * 4
+make run
+make
+zig build -freference-trace=7
+make
+make run
+make
+make run
+node
+~7
+19 & 8
+19 | bit-and 8
+19 bit-and 8
+0b1000
+bit-not 0
+python
+z zig
+mkdir alloc
+cd alloc/
+zig init
+man mmap2
+man 2 mmap2
+man 2 mmap
+zig build run
+bat /usr/include/sys/mman.h 
+bat /usr/include/bits/mman.h 
+bat /usr/include/bits/mman-map-flags-generic.h 
+bat /usr/include/bits/mman-linux.h 
+cd /usr/include
+rg "MREMAP_FIXED"
+cd ../..
+git clone git@github.com:bminor/glibc.git
+cd glibc
+fd mmap
+nvim misc/mmap.c 
+rg "mremap"
+bat malloc/memusage.c 
+man mremap
+zig build 
+zig build test
+zig test src/linux.zig
+man mremap
+zig test src/linux.zig
+zig build
+zig build run
+zig build test
+zig build -freference-trace=7
+zig build test
+zig build run
+man 2 mmap
+zig build run
+bat sysdeps/unix/sysv/linux/mremap.c 
+bat linux/mman.h
+man 2 mmap
+nvim
+nvim
+lazygit
+oparu
+z ghostty
+nvim
+ghostty
+paru
+exa --tree --git-ignore ~/src
+exa --tree --git-ignore ~/src/personal/
+exa --tree --git-ignore ~/src/personal/budgetry/
+nvim config 
+btop
+ghostty +show-config | bat --plain
+nu
+z alloc
+zellij
+z nushell
+nu
+nvim
+z alloc
+4096 / 8
+4096 / 64
+4096 / 32
+4096 / 128
+z alloc
+nvim
+zig build
+zig test src/JsmAllocator.zig
+128 + 35
+152 - 24
+zig test src/JsmAllocator.zig
+python
+z personal
+mkdir foobar
+cd foobar/
+nvim foobar.py
+python
+python foobar.py 
+z os
+make
+make run
+nvim
+paru
+z storychart
+cd ..
+z personal
+cd vincent/
+ls
+cd cs
+ls
+cd ..
+dotnet new console -o Functions
+cd Functions/
+dotnet run
+nvim
+omnisharp
+z nvim
+which dotnet
+z .local/state
+ls
+cd nvim
+tail -n 100 lsp.log 
+nvim
+z zsh
+z nushell
+nvim
+nvim
+nvim
+nvim
+$env.DOTNET_ROOT
+z vincent
+ls
+cd Functions/
+dotnet run
+cd Functions/
+dotnet run
+nvim
+z server
+nvim
+lazygit
+z storychart
+nvim
+lazygit
+z alloc
+zig build test
+nvim
+lazygit
+git init
+zig test src/JsmAllocator.zig
+zig build --help
+zig build
+exa --tree zig-out/
+zig build test
+zig build test --summary all
+zig build test --help
+zig build test --summary all
+zig test --help
+zig test --help | help
+zig test --help
+zig test --help | help
+zig build test --summary all
+zig fetch --help
+zig fetch https://github.com/hendriknielaender/zBench/archive/refs/tags/v0.9.1.tar.gz --save
+zig build bench
+nvim
+zig build bench
+cd
+cd code/zig-bins/ls
+cd code/zig-bins
+ls
+zsh
+ls
+rm zig-linux-x86_64-0.13.0.tar.xz
+ls
+cd bin
+ls
+ln -s /home/jaco/code/zig-bins/zig-linux-x86_64-0.13.0/zig zig
+unlink zig
+ln -s /home/jaco/code/zig-bins/zig-linux-x86_64-0.13.0/zig zig
+zig --version
+zig version
+zig build
+zig build bench
+unlink zig
+ln -s /home/jaco/code/zig-bins/zig-linux-x86_64-0.14.0-dev.2989+bf6ee7cb3/zig zig
+nvim
+zig version
+lazygit
+z budgetry
+cd api
+cd ../web
+cd ../api
+pnpm dev
+cargo watch -i "dev.sqlite*" --why -x run
+nvim
+nvim
+lazygit
+z personal
+ls
+bat zig
+cd zig
+ls
+cd ..
+cd 1brc-zig/
+ls
+nvim
+z .local/state/nvim
+tail -n 100 lsp.log 
+z zig-bins
+ls
+cd bin
+ls -al
+cd ..
+cd
+zig version
+z .local/state/nvim
+ls
+tail -n 100 lsp.log 
+which zls
+cd
+cd Downloads
+cd
+cd src
+ls
+cd personal/
+ls
+cd zls
+git pull
+zig build --help
+z zig-bins
+curl https://ziglang.org/download/index.json | from json | get master.x86_64-linux.tarball | curl $in | tar -Jxv
+ls
+cd bin
+unlink zig
+ln -s /home/jaco/code/zig-bins/zig-linux-x86_64-0.14.0-dev.3091+42e48b83b/zig 
+zig build
+zig build -Doptimize=ReleaseSafe
+ls 
+ls zig-out/
+ls
+exa --tree zig-out/
+which zls
+cp zig-out/bin/zls $env.home/.local/bin/zls
+cp zig-out/bin/zls $"($env.home)/.local/bin/zls"
+zls version
+nvim
+z .local/state/nvim
+tail -n 100 lsp.log 
+z alloc
+nvim
+cd -
+cd
+zig build run --release=fast
+zig build run
+;
+zig build run
+152 - 24
+zig build run
+zig build run --release=fast
+zig build run 
+man 2 mmap
+zig build simple
+zig build simple -Doptimize=fast
+zig build simple --help
+zig build simple -Doptimize=ReleaseFast
+nvim
+btop
+z storychart
+lazygti
+nvim
+lazygit
+z 1brc-zig\
+z 1brc-zig
+zig build
+z 1brc-zig
+zig build
+zig build simple
+zig build simple -Doptimize=ReleaseFast
+zig build simple
+zig build simple -Doptimize=ReleaseFast
+zig build simple
+nvim
+z storychart
+nvim
+lazygit
+paru -S vulkan-devel
+paru -S glfw-wayland
+paru -S shaderc
+z zig
+cd ..
+zig
+cd zig
+ls
+mkdir vulkan
+cd vulkan/
+zig init
+zig fetch https://github.com/Snektron/vulkan-zig/archive/604416bf44baf95568c428e1aa55499aa8e07607.zip --save
+zig fetch https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.4.304.1.zip --save
+zig fetch --help
+zig fetch https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/vulkan-sdk-1.4.304.1.zip --debug-hash
+zig build
+nvim
+sudo pacman -S libxi libxxf86vm
+zig build run 
+zig fetch --save https://pkg.machengine.org/mach/2410814e916970672a837c2d67a5a0a3f927ca4b.tar.gz
+zig build run 
+btop
+z vulkan
+zig build run
+z .local/state/nvim
+tail -n 100 lsp.log 
+nvim
+zig build run
+zig build -freference-trace=7
+zig build run
+btop
+z vulkan
+btop
+zig build run
+rm -rf zig-out/ .zig-cache/
+zig build
+zig build run 
+nvim
+zig build run 
+zig fetch https://github.com/KhronosGroup/Vulkan-Headers/archive/refs/tags/v1.3.302.tar.gz --debug-hash
+zig build run 
+paru -S freecad
+autocad
+opencad
+freecad
+zig build run 
+jj
+zig build run 
+800 * 1.25
+600 * 1.25
+chmod +x ./scripts/compile.sh 
+./scripts/compile.sh
+exa --tree zig-out/
+zig build run
+z nvim
+nvim
+z nvim
+nvim
+nvim
+zig build run
+zig build
+zig build run
+zig build
+zig build run
+btop
+z nvim
+nvim
+paru
+nvim
+z code
+curl https://github.com/marler8997/zigup/releases/download/v2025_01_02/zigup-x86_64-linux.tar.gz | tar -Jxv
+wget https://github.com/marler8997/zigup/releases/download/v2025_01_02/zigup-x86_64-linux.tar.gz
+tar -xvf zigup-x86_64-linux.tar.gz 
+ls
+cp zigup ~/.local/bin/
+zigup
+zigup list
+zigup master
+z nushel
+zig --version
+zig version
+zigup
+zigup 0.13
+zigup 0.13.0
+zig version
+cd ../..
+git clone git@github.com:nolanderc/glsl_analyzer.git
+cd glsl_analyzer/
+zig build install -Doptimize=ReleaseSafe --prefix ~/.local/
+nvim
+btop
+z nvim
+nvim
+zigup default master
+cd
+z zig
+cd ..
+cd src
+z zig
+cd ../zig
+git clone git@github.com:Jaco-Minnaar/zalgebra.git
+cd zalgebra/
+zig build
+zig version
+zig fetch https://github.com/Jaco-Minnaar/zalgebra/archive/0ff2b6093a410b26a294d4ed53985882256072a1.zip --save
+z nvim
+nvim
+nvim
+zig build
+nvim
+zig build test
+zig build test --summary all
+zig fetch https://github.com/Jaco-Minnaar/zalgebra/archive/fcfcd8a16c6be16bf1643c038c9bd23eef50cc23.zip --save
+zig build
+nvim
+zig clean
+rm -rf zig-out/ .zig-cache/
+zig build
+nvim
+zig build test --summary all
+rm -rf zig-out/ .zig-cache/
+zig build test --summary all
+z nvim
+nvim
+nvim
+nvim
+z zls
+git pull
+zig build -Doptimize=ReleaseSafe
+cp zig-out/bin/zls $"($env.home)/.local/bin/zls"
+cp zig-out/bin/zls ./
+cp zig-out/bin/zls $"($env.home)/.local/bin/zls"
+cd -
+nvim
+lazygit
+paru
+z vulkan
+nvim
+z ghostty
+ghostty +show-config | bat --plain
+z vulkan
+exa --tree .zig-cache/
+nvim config 
+cd -
+git init
+git remote add origin git@github.com:Jaco-Minnaar/renderer-zig.git<\n>git branch -M main<\n>git push -u origin main
+zig build run
+cd ../..
+ls
+cd vincent/
+ls
+cd Functions
+dotnet run
+nvim
+cd ..
+ls
+dotnet new console -o Todo
+cd Todo/
+ls
+cd ../Todo/
+nvim
+git init
+nvim
+dotnet run
+git remote add origin git@github.com:Jaco-Minnaar/vincent-todo.git<\n>git branch -M main<\n>git push -u origin main
+lazygit
+zig build
+zig build run
+paru
+z vulkan
+nvim
+lazygit
+z storychart
+nvim
+lazygit
+z vulkan
+zig build
+zig build run
+cd ..
+rg Log2
+cd vulkan
+zig build 
+cd ..
+rg Log2
+zig build
+zig build run
+nvim
+zig --help
+zig build-obj src/GraphicsContext.zig
+paru
+btop
+z vulkan
+zig build
+z nvim
+nvim
+zig build
+zig build run
+git commit -m 'refactor'
+zsh
+git commit -m 'refactor'
+git push
+lazygit
+nvim
+z storychart
+nvim
+z vulkan
+zig build run
+zsh
+git config --global commit.gpgsign true
+zig build run
+z vulkan
+zig build run
+nvim
+zig build 
+zig build run
+zig build
+zig build run
+zig build
+zig build run
+zig fetch https://codeberg.org/ifreund/zig-wayland/archive/33eb61512079e681f0be63292ae9215c90fa253d.tar.gz --save
+zig build
+zig build 
+zig build run
+zigup master
+zig version
+cd 
+z personal
+cd zls
+git pull
+zig build install -Doptimize=ReleaseSafe --prefix ~/.local/
+cd ~/.local/
+ls
+cd bin
+ls
+cd
+zls version
+nvim
+zig build run
+zig build
+zig build run
+nvium
+zig build
+zig build run
+paru
+nvim
+z vulkan
+zig build run
+rm -rf zig-out/ .zig-cache/
+zig build run
+rm -rf zig-out/ .zig-cache/
+zig build run
+nvim
+zig build run
+lazygit 
+z zig
+cd ../
+z personal
+cd zig
+mkdir wayland
+zig init
+$env.WAYLAND_DISPLAY
+cd /
+fd wayland.xml
+cd
+cp /usr/share/wayland/wayland.xml ./
+mkdir deps
+rm -r deps
+cd wayland/
+mkdir deps
+cp ../wayland.xml ./deps/
+zig fetch https://github.com/ianprime0509/zig-xml/archive/8e1b3eedcc4a9049a5caf75025f267663542a77c.tar.gz --fetch
+zig fetch https://github.com/ianprime0509/zig-xml/archive/8e1b3eedcc4a9049a5caf75025f267663542a77c.tar.gz
+zig fetch https://github.com/ianprime0509/zig-xml/archive/8e1b3eedcc4a9049a5caf75025f267663542a77c.tar.gz --save
+nvim
+ls
+cd wayland/
+ls
+cd ..
+ls -al
+rm build.zig build.zig.zon
+cd wayland/
+ls
+ls -la
+zig init
+zig fetch https://github.com/ianprime0509/zig-xml/archive/8e1b3eedcc4a9049a5caf75025f267663542a77c.tar.gz --save
+ls
+zig build run
+cd ..
+git clone git@github.com:Jaco-Minnaar/zig-xml.git
+cd zig-xml
+lazygit
+zig buid
+zig build
+bat /usr/share/wayland/wayland.xml 
+nvim
+git checkout -b fix-deinit
+git commit -m 'fix deinit on reader'
+git add -A 
+git commit -m 'fix deinit on reader'
+git push
+zig fetch https://github.com/Jaco-Minnaar/zig-xml/archive/a7e807c42325e5714454767a2417dad3e227c1ef.tar.gz --save
+zig build
+zig fetch https://github.com/Jaco-Minnaar/zig-xml/archive/d62a64d68d18ea29bbe31def56072c634ec90f71.tar.gz --save
+zig build
+zig build run
+zig build test
+zig build test --help
+zig build test --summary all
+zig build run
+zig build run -freference-trace=7
+zig build
+zig build run
+nvim
+zig build run
+lazygit
+nvim
+paru
+z storychart
+nvim
+cd ../..
+cd qerent-for-ps-data-api/
+ls -la
+z wayland
+zig build --help
+zig build --help | help
+zig build codegen 
+ls
+zig build codegen 
+ls
+bat zwl-gen.zig 
+zig build codegen 
+bat zwl-gen.zig 
+zig build codegen 
+bat zwl-gen.zig 
+zig build codegen 
+bat zwl-gen.zig 
+zig build codegen 
+bat zwl-gen.zig 
+zig build codegen 
+zig build codegen -freference-trace=7
+zig build codegen -freference-trace=10
+zig build codegen 
+zig build codegen
+zig build
+nvim
+cd ..
+cd vulkan
+nvim
+lazygit
+lazygi
+lazygit
+zig build
+nvim
+git init
+nvim
+zig build run
+history
+history | find
+history | find include
+bat /usr/include/wayland-client.h 
+bat /usr/include/wayland-client-core.h 
+bat /usr/include/wayland-client-protocol.h 
+bat /usr/include/wayland-protocols/
+bat /usr/include/wayland-client.h 
+bat /usr/include/wayland-client-protocol.h 
+man libwayland
+zig build codegen
+ls
+zig build codegen
+nvim
+zig build codegen
+nvim
+zig build codegen -- test.zig
+ls
+fd test.aig
+fd test.zig
+nvim
+zig build codegen
+zig build run
+nvim
+zig build run
+nvim
+zig build run
+nvim
+zig build run -freference-trace=7
+zig build run
+zig build run -freference-trace=7
+zig build codegen
+nvim
+zig build codegen
+nvim
+zig build run
+nvim
+bat /usr/include/wayland-client-protocol.h 
+nvim
+z wayland
+zig build codegen
+zig build codegen -freference-trace=7
+nvim
+zig build codegen -freference-trace=7
+nvim
+zig build codegen
+zig build 
+zig build
+nvim
+nvi
+zig build
+nvim
+zig build
+zig build run
+man shm_open
+man memfd_create
+cd ../vulkan
+zig build codegen
+zig build
+zig build
+nvim
+zig build run
+nvim
+zig build run
+btop
+man memfd_create
+zig build run
+nvim
+nvi
+nvim
+zig build run
+zig build
+zig build run
+zig build
+zig build run
+0x00c
+0x000c
+0x000c << 16
+0x000c | bit-shl 16
+0x000c bit-shl 16
+0x000c bit-shl 16 | he
+0x000c bit-shl 16 | hex
+0x000c bit-shl 16
+0x000c bit-shl 16 | encode hex
+0x000c bit-shl 16 | format number
+zig build
+zig build run
+0x000c bit-shl 16 
+zig build run
+0x000c bit-shl 16 
+0x000c bit-shl 16 bit-or 1
+zig build run
+nvim
+nvi
+zig build run
+nvim
+zig build run
+nvim
+zig build run
+zig build
+nvim
+zig build run
+nvim
+lazygit
+z personal
+ls
+cd bearth/
+ls
+cd b-earth-storefront/
+ls
+nvim
+nvim
+lazygit
+paru
+z wayland
+cd deps
+wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/staging/xdg-activation/xdg-activation-v1.xml
+wget https://gitlab.freedesktop.org/wayland/wayland-protocols/-/raw/main/stable/xdg-shell/xdg-shell.xml
+cd ..
+zig build
+paru -S bluez-tools
+bluetoothctl
+paru -S bluez-utils
+bluetoothctl
+sudo systemctl status bluetoothd
+sudo modprobe btusb
+sudo systemctl status bluetooth
+sudo systemctl start bluetooth
+sudo systemctl enable bluetooth
+bluetoothctl
+cd /etc/modules-load.d/
+ls
+nvim btusb.conf
+sudoedit btusb.conf
+z nushell
+nvim
+nvim
+lazygit
+cd /etc/modules-load.d/
+sudoedit btusb.conf
+z bearth
+mkdir custom
+cd custom
+pnpm init solid
+pnpm create solid
+npx @teambit/bvm install
+ls
+pnpm --help
+pnpm create --help
+pnpm create solid
+mkdir data
+rm -r data
+mkdir db
+cd db
+pnpm init
+cd ..
+pnpm install
+ls
+cd ..
+cd budgetry/
+ls
+cd web
+ls
+pnpm init
+pnpm add --help
+pnpm add --help | help
+pnpm add -D prettier
+pnpm add -D -w prettier
+pnpm install
+git init
+nvim
+cd admin
+z adin
+z admin
+cd -
+z bearth-admin/
+pnpm add tailwindcss @tailwindcss/vite
+cd ..
+corepack install -g pnpm@10.5.0
+cd bearth-admin/
+pnpm dev
+pnpm add -D eslint @eslint/js typescript-eslint
+z budgetry
+cd web
+bat tailwind.config.js 
+cd ..
+pnpm add -D prettier prettier-plugin-tailwindcss
+pnpm add -D -w prettier prettier-plugin-tailwindcss
+z budgetry
+ls
+cd web
+cd db
+pnpm add drizzle-orm @libsql/client dotenv<\n>pnpm add -D drizzle-kit tsx
+ls -la
+turso
+turso auto
+turso auth
+turso auth login
+turso 
+turso org
+turso org list
+turso org switch b-earth
+turso
+turso db
+turso db create
+turso db list
+turso db 
+turso db destroy worthy-3d-man
+turso db create --help
+turso db create b-earth-dev
+turso db token create b-earth-dev
+turso db tokens create b-earth-dev
+turso db show --url b-earth-dev
+pnpm add -D eslint @eslint/js typescript-eslint typescript
+pnpm run db:generate
+pnpm run db:migrate
+cd ../
+pnpm install
+cd bearth-admin/
+ls
+pnpm add drizzle-orm @libsql/client dotenv
+nvim
+cd ../db
+pnpm exec tsc
+ls
+pnpm exec tsc
+pnpm build
+pnpm dev
+pnpm build
+ls
+ls -la
+pnpm db:generate
+pnpm db:migrate
+nvim
+lazygit
+nvim
+pnpm dev
+git remote add origin git@github.com:B-Earth/b-earth.git<\n>git branch -M main<\n>git push -u origin main
+pnpm install turbo --global
+pnpm help add
+z nushell
+pnpm install turbo --global
+$env.PATH
+cd ~/.local/share/pnpm/
+ls
+nvim
+nvim
+lazygit
+pnpm install turbo --global
+turbo --help
+which turbo
+z custom
+ls
+turbo --help
+turbo --help | help
+turbo init
+nvim
+turbo init
+pnpm add turbo --save-dev --workspace-root
+corepack prepare pnpm --activate
+turbo build
+ls
+turbo build
+cd admin
+cd bearth-admin/
+cd ..
+mv bearth-admin/ admin
+mv bearth-shop/ shop
+cd admin
+pnpm dev
+ls
+ls -la
+turbo build
+ls -la
+cd ..
+ls -la
+turbo build
+pnpm install
+turbo build
+turbo --help
+pnpm build --force
+nvim
+cd admin
+pnpm add solid-icons
+ls
+pnpm dev
+btop
+z budgetry
+cd web
+cd ../db
+pnpm db:generate
+pnpm db:migrate
+pnpm build
+pnpm db:generate
+pnpm db:migrate
+pnpm build
+pnpm db:generate
+pnpm build
+pnpm dev
+nvim
+nvim
+lazygit
+paru
+z wayland
+z storychart
+nvim
+cd ../..
+ls
+cd qerent-for-ps-data-api/
+ls
+bat .env.test 
+z custom
+cd admin
+cd ../db
+pnpm db:generate
+pnpm db:migrate
+cd ..
+turbo build
+cd db
+pnpm build
+node
+pnpm build
+z proxy-server
+nvim
+cd Onebt.WebApp/
+ls
+rm pnpm-lock.yaml
+rm package-lock.json
+rm -rf node_modules/
+npm install
+npm run build
+cd ..
+rg pnpm
+pnpm dev
+z web
+cd -
+lazygit
+nvim
+pnpm dev
+nvim
+z storychart
+nvim
+./.venv/bin/activate
+ls
+ls -la
+bat requirements.txt 
+bat requirements-dev.txt 
+cd ../..
+cd qerent-for-ps-data-api/
+python -m virtualenv .venv
+which pip
+pip install virtualenv
+python -m virtualenv .venv
+./.venv/bin/activate.nu
+bat .venv/bin/activate.nu 
+overlay use .venv/bin/activate.nu
+nvim
+pip install -r requirements-dev.txt 
+playwright activate
+playwright
+playwright install
+zsh
+playwright install chromium
+pip install -r requirements-dev.txt 
+nvim
+pip install artifacts-keyring
+pip install -r requirements-dev.txt 
+nvim
+lazygit
+z personal
+ls
+cd rust
+ls
+mkdir rendrs
+cd rendrs/
+rustup update
+cargo init
+ls
+cargo add vulkano
+z vulkan
+nvim
+lazygit
+cargo add winit
+z nvim
+nvim
+nvim
+cargo add anyhow
+cargo run
+cargo build
+cargo run
+z vulkan
+cargo add log
+nvim
+nvim
+nvim
+paru
+lazygit
+z storychart
+nvim
+btop
+sudo systemctl status fstrim.service
+sudo systemctl status fstrim.timer
+sudo systemctl enable fstrim.timer
+lsblk --discard
+z rendrs
+cargo add smallvec
+z vulkan
+cargo add vulkano_shaders
+cargo add env_logger
+cargo add dotenvy
+cargo build
+cargo run
+RUST_BACKTRACE cargo run
+RUST_BACKTRACE=1 cargo run
+RUST_BACKTRACE cargo run
+cargo run
+cargo build
+cargo run
+z api
+cd -
+z bugdetry/api
+z bugdetry
+z budgetry/api
+nvim
+cargo run
+cargo add nalgebra
+lazygit
+cargo run
+nvim
+nvim
+paru
+paru -R libfprint-2-tod1-broadcom
+paru
+z storychart
+nvim
+overlay use .venv/bin/activate.nu
+z qerent
+nvim
+overlay use .venv/bin/activate.nu
+pip install -r requirements-dev.txt 
+nvim
+z qerent
+python bsc/ui_tester
+python bsc/ui_tester/__main__.py 
+python bsc/ui_tester
+python bsc/ui_tester/__main__.py 
+python main.py
+nvim
+python main.py examples/tests
+python main.py
+python main.py examples/tests
+z nvim
+nvim
+python main.py examples/tests
+z rendrs
+nvim
+git remote add origin git@github.com:Jaco-Minnaar/rendrs.git<\n>git branch -M main<\n>git push -u origin main
+lazygit
+nvim
+nvim
+lazygit
+zellij
+z nushell
+nvim
+zoxide init nushell
+$nu.env-path
+nvim
+z ghostty
+nvim
+z nushell
+zoxide init nushell
+$nu.env-path
+nvim
+zellij
+z rendrs
+z zellij
+nvim
+cargo add glam -F bytemuck
+cargo run
+cargo add bytemuck -F derivce
+cargo add bytemuck -F derive
+cargo run
+cargo chrono
+cargo add chrono
+cargo build
+cargo run
+mkdir textures/
+cd textures/
+wget https://vulkan-tutorial.com/images/texture.jpg
+rm texture.jpg
+wget https://kylemayes.github.io/vulkanalia/images/texture.png
+cargo add png
+nvim
+z vulkan
+cargo add parking_lot
+nvim
+cd ../..
+git clone git@github.com:vulkano-rs/vulkano.git
+cd vulkano/
+ls
+cargo build
+nvim
+cd ..
+cargo run
+paru
+lazygit
+flatpak update
+z storychart
+nvim
+overlay use .venv/bin/activate.nu
+python main.py examples/tests
+z rendrs
+nvim
+python main.py examples/tests
+btop
+cargo run
+cargo clean
+cargo run
+z server
+ls
+cd Fhir.GrpcService/
+dotnet run
+az login
+dotnet run
+dotnet watch run
+nvim
+768 + 76
+809 - 76
+ls
+cd Fhir.GrpcService
+ls
+ls -la
+cd out
+ls
+cd wwwroot/
+ls
+dotnet watch run
+nvim
+git revert --help
+lazygit
+zellij
+:q
+cargo run
+cd code
+z code
+git clone git@github.com:Overv/VulkanTutorial.git
+z VulkanTutorial/
+ls
+rg fan
+rg triangle
+cd en
+rg triangle
+rg vertices
+cargo run
+nvim
+cargo run
+btop
+cargo run --release
+cargo add tobj
+ls
+mkdir resources
+rm -r resources/
+mkdir models
+cd models
+wget https://vulkan-tutorial.com/resources/viking_room.obj
+cd ../textures
+wget https://vulkan-tutorial.com/resources/viking_room.png
+cd ..
+cargo run
+cargo add image
+cargo run
+cd ..
+mkdir vulkan-cpp
+nvim
+cd vulkan-cpp/
+wget https://github.com/tinyobjloader/tinyobjloader/raw/refs/heads/release/tiny_obj_loader.h
+mkdir models
+cd models 
+wget https://vulkan-tutorial.com/resources/viking_room.obj
+cd ..
+gcc main.cpp
+make
+ls
+./test
+paru -S blender
+nordlayer status
+blender
+cargo run
+paru -S glm
+z nvim
+nvim
+nvim
+make
+ls
+./test
+btop
+lazygit
+nvim
+zellij a rendr
+z vulkan-cpp
+make
+./test
+make
+./test
+3828  * 3
+cargo run
+cargo add ordered_float
+cargo run
+lazygit
+paru
+nvim
+zellij a
+nvim
+z rendr
+ls
+cargo run
+z rendrs
+cargo run
+z storychart
+lazygit
+z storychart
+paru
+flatpak update
+z storychart
+lazygit
+zellij
+ls
+z personal
+z rendrs
+cargo run
+nvim
+cargo run
+cargo build
+cargo new rendrs_core
+cargo new rendrs_sandbox
+cd rendrs_sandbox/
+ls
+cargo add --help
+cargo add --help | help
+cargo add --path ../rendrs_core/
+nvim
+cargo add anyhow
+cargo add log
+cargo add env_logger
+cargo add dotenvy
+cargo add winit
+cargo build --help | help
+cargo build -p rendrs_sandbox
+cargo add parking_lot
+cargo run -p rendr_sandbox
+cargo run -p rendrs_sandbox
+lsblk
+df -h
+nvim
+q
+cargo build -p rendrs_sandbox
+cargo clean
+df -h
+cd ..
+dust
+cd 
+dust
+rm .cache/jdtls/workspace/1brc-zig_9debc686/bin/measurements.txt
+cd src/personal/blc-rs/
+rm measurements.txt
+cd ..
+ls
+dust
+rm 1brc-zig/measurements.txt
+dust
+rm -rf vulkano/target/
+dust
+rm blc-rs/perf.data.old
+dust
+podman prune
+podman container ps -a
+podman image ps
+podman images ls
+podman images ls -a
+cd
+dust
+cd code
+dust
+rm csharp-language-server-protocol/
+rm -r csharp-language-server-protocol/
+dust
+rm -r wezterm/target/
+rm -r zig-src
+dust
+cd ..
+cd personal
+cd src
+dust
+rm -r shuttle/
+rm -r microsoft-authentication-library-for-js/
+cd
+dust
+cd Downloads/
+dust
+rm perf.data
+cd ..
+dust
+z rendrs
+cargo build
+cargo run -p rendrs_sandbox
+nvim
+btop
+cargo run -p rendrs_sandbox
+cargo add glam -F bytemuck
+cargo run -p rendrs_sandbox
+cargo build
+nvim
+cargo run
+cargo run -p rendrs_sandbox --release
+paru
+nvim
+z nvim
+nvim
+nvim
+lazygit
+btop
+paru
+z storychart
+lazygit
+nvim
+overlay use .venv/bin/activate.nu
+z nvim
+nvim
+nvim
+btop
+overlay use .venv/bin/activate.nu
+z personal
+ls
+mkdir 1brc-rust
+cd 1brc-rust/
+cargo init
+cd ..
+cd 1brc-rust/
+cargo init --help
+cargo init --name brc
+cd ..
+cd 1brc
+ls
+bat README.md 
+./create_measurements.sh 1000000000
+mv measurements.txt ../1brc-rust/
+cd ../1brc-rust/
+ls
+cargo add memmap2
+cargo add anyhow
+cargo add log
+nvim
+cargo run --release
+zsh
+cargo flamegraph
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+z 1brc-zig
+cargo build
+rustup update
+nvim
+cargo test
+cargo run
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+cargo bench
+cargo add criterion
+cargo bench
+nvim
+cargo bench
+head measurements.txt 
+head -n 1000000 measurements.txt | save sample.txt
+bat sample.txt 
+ls -al
+cargo run
+cargo run --release
+head measurements.txt 
+0x3
+cargo test
+nvim
+cd ../
+cd 1brc
+cargo add bytes
+cargo run --release
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+btop
+cargo run --release
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+cargo run --release
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+cargo add ahash
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+cargo run --release
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+cargo test
+cargo run --release
+CARGO_PROFILE_RELEASE_DEBUG=true cargo flamegraph
+paru
+nvim
+bat README.md 
+zellij
+nvim
+ping 1.1.1.1
+z personal
+cd rust
+mkdir db-viewer
+cd db-viewer/
+cargo init
+cargo add iced
+cargo run
+nvim
+zellij
+zellij a
+zellij a charming
+btop
+nvim
+overlay use .venv/bin/activate.nu
+cd ../..
+ls
+cd qerent-for-ps-data-api/
+nvim
+overlay use .venv/bin/activate.nu
+pip install -r requirements-dev.txt 
+nvim
+git rebase --interactive 3eb4d
+git rebase --interactive b450
+git rebase --abort
+git rebase --interactive b450
+git rebase --abort
+git rebase --interactive b450
+git status
+git commit --amendn
+git commit --amend
+git status
+git reset --soft HEAD~
+git commit 
+git status
+git rebase --continue
+git rebase --interactive b450
+git reset --soft HEAD~
+git commit
+git rebase --continue
+git reset master
+cd ..
+cd storychart
+ls
+mkdir tester-tester
+cd tester-tester
+python -m virtualenv .venv
+overlay use .venv/bin/activate.nu
+pip install -e ../py-storychart-ui-tester/
+pip install artifacts-keyring
+pip install -e ../py-storychart-ui-tester/
+pip install --upgrade build
+python -m build
+versioneer install
+versioneer --help
+paru -S python-poetry
+poetry --help
+which poetry
+poetry add playwright
+poetry add python-dotenv
+poetry add tomli
+poetry --help
+poetry list
+cd ../..
+ls
+bsc-dev --help
+bsc-dev setup
+bsc-dev setup --help
+bsc-dev setup python
+bsc-dev setup python --python 3.10
+az login
+bsc-dev setup python --python 3.10
+uv --help
+python setup.py
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' python setup.py
+python setup.py --help-commands
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' python setup.py --help-cmds
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' python setup.py --help-commands
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' python setup.py build
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' python setup.py bdist_wheel
+zsh
+pip install -e ../py-storychart-ui-tester/
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' pip install -e ../py-storychart-ui-tester/
+bsc.ui_tester
+nvim
+python main.py examples/tests
+lazygit
+nvim
+zellij a
+paru
+ls
+z storychart
+cd ..
+ls
+cd tester-tester/
+ls
+overlay use .venv/bin/activate.nu
+pip install -e ../py-storychart-ui-tester/
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' pip install -e ../py-storychart-ui-tester/
+nvim
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' pip install -e ../py-storychart-ui-tester/
+cd ../tester-tester/
+bsc-dev setup python
+bsc-dev setup python --python 3.10
+touch requirements-dev.txt
+touch requirements.txt
+bsc-dev setup python --python 3.10
+python --version
+zsh
+python --version
+overlay use .venv/bin/activate.nu
+pip install -e ../py-storychart-ui-tester/
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' pip install -e ../py-storychart-ui-tester/
+nvim
+overlay use .venv/bin/activate.nu
+nvim
+paru uv
+paru -S uv
+deactivate
+cd ..
+rm -r tester-tester/
+uv init tester-tester
+cd tester-tester/
+ls
+uv venv --python 3.10
+overlay use .venv/bin/activate.nu
+uv pip install -e ../py-storychart-ui-tester/
+PACKAGE_AUTHOR='Jaco Minnaar' PACKAGE_AUTHOR_EMAIL='jminnaar@bscglobal.com' PACKAGE_URL='example.com' PACKAGE_OS='linux' uv pip install -e ../py-storychart-ui-tester/
+overlay use .venv/bin/activate.nu
+python --version
+python test/test_example.py 
+cd ../..
+cd ../
+cd personal/
+ls
+cd vincent/
+ls
+dotnet new console -o Basic
+cd Basic/
+dotnet run 
+nvim
+nvim
+nvim
+ls
+rm -r .venv
+uv venv --python 3.10
+overlay use .venv/bin/activate.nu
+uv pip install -r requirements-dev.txt
+overlay use .venv/bin/activate.nu
+uv pip install -r requirements-dev.txt
+flake8
+cd src/personal/
+ls
+cd aoc
+ls
+cd 2024
+ls
+mkdir python
+cd python
+mkdir data
+cd data
+cd ..
+nvim
+python day1.py 
+python day1.py | less
+python day1.py 
+zellij
+z personal
+mkdir games
+cd games
+mkdir block-break
+cd block-break/
+cargo init
+cargo add bevy
+rustup component add rustc-codegen-cranelift-preview --toolchain nightly
+cargo add log
+cd ../..
+dust
+rm -r budgetry/api/target/
+rm -r rust/rendrs/target/
+rm -r rust/audio-player/target/
+rm game-of-life/bevy/target/
+rm -r game-of-life/bevy/target/
+rm -r dmt/target/
+rm -r shooters/target/
+df -h
+dust
+cargo build
+cargo run
+cd 
+cd code
+ls
+git clone git@github.com:bevyengine/bevy.git
+cd bevy
+cd -
+cargo run
+nvim
+nvim
+btop
+z personal
+cd rust
+mkdir rlox
+cd rlox/
+cargo init
+cargo run
+cd ../..
+ls
+cd c
+ls
+mkdir print
+cd print
+gcc main.c
+ls
+./a.out
+gcc main.c
+./a.out
+cargo run
+0xFF
+cargo run
+nvim
+nvim
+zellij
+paru
+flake8
+ruff
+ruff check 
+ruff check bsc
+ruff
+ruff --preview format bsc
+ruff format --preview bsc
+z qerent
+z nivm
+z nvim
+nvim
+flake8
+z rlox
+nvim
+z zlox
+ls
+zig --version
+zig version
+which zig
+history | find master
+zigup 0.14
+zigup 0.14.0
+zig version
+cd ../..
+cd zls
+git fetch
+git checkout tags/0.14.0
+zig build install -Doptimize=ReleaseSafe --prefix ~/.local/
+ls
+z -
+z zlox
+zls version
+z rlox
+zig build
+cd ..
+ls
+cd src
+ls
+cd ..
+rm -r src
+ls
+cd example/
+cd ..
+rm -r example/
+mkdir example
+cd example/
+zig init
+nvim
+cd ../zlox
+zig build
+cd ../example
+ls
+nvim
+zig build
+zig build run
+nvim
+z rlox
+cargo run
+nvim
+zig build run
+z example
+zig build 
+zig build run
+nvim
+nvim
+nvim
+z qerent
+nvim
+ls
+cd _test/
+ls
+cd test_e2e/
+rg enum
+rg "enum"
+ls
+cd ..
+rg enum
+cd ..
+rg enum
+rg "Enum"
+cd ../..
+ls
+git clone git@ssh.dev.azure.com:v3/bscglobal/bsclib/py-bsc-error
+cd py-bsc-error/
+nvim
+uv venv --python 3.10
+overlay use .venv/bin/activate.nu
+uv pip install -r requirements-dev.txt
+paru
+z storychart
+nvim
+neofetch
+paru
+zellij
+z zlox
+nvim
+cd ..
+mkdir kaleidoscope
+cd kaleidoscope/
+zig init
+zig build
+zig build run
+z proxy-server
+ls
+nvim
+dotnet watch run --project
+dotnet watch run --project Fhir.GrpcService/
+cd Onebt.WebApp/
+npm install
+npm run dev
+npm install
+nvim
+prettier src
+prettier --help | help
+prettier -w src
+nvim
+npm run dev
+dotnet watch run --project Fhir.GrpcService/
+lazygit
+nvim
+zellij a
+z storychart
+nvim
+paru
+nvim
+z kaleidoscope
+zig build
+zig build run
+z proxy-server
+nvim
+dotnet watch run --project Fhir.GrpcService/
+ping 1.1.1.1
+az login
+dotnet watch run --project Fhir.GrpcService/
+paru
+flatpak update
+lazygit
+zellij
+zellij a
+lazygit
+btop
+zellij a tester
+nvim
+zellij a
+z storychart
+nvim
+overlay use .venv/bin/activate.nu
+nvim requirements.txt 
+lazyigt
+ls
+cd ../tester-tester/
+ls
+ls -la
+ls -la
+bat .env.test
+fd .env
+tree
+exa --tree 
+z qerent
+bat .env.test
+//:::::::::::::::::::::_?weeeeeeeee0000000000000000000000000000000000000000000000000000000000000000000000000000000 cvfg------------------------------------------------hjjjj                                                                                                                                                                                                                                                                             00005555555t
+pyh//:::::::::::::::::::::_?weeeeeeeee0000000000000000000000000000000000000000000000000000000000000000000000000000000 cvfg------------------------------------------------hjjjj                                                                                                                                                                                                                                                                             00005555555t4F||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr{+(}rffffv*cnnnjpp-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             655555555555555555*R.RRD                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        I                                                                                                                                                                                                                                              9mnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnuiId666666666666666666FVWSXEDCQAZT///(b*)                                                                                                                                                            F b
+paru
+flatpak update
+z storychart
+z .local
+ls
+cd share/
+ls
+cd nvim/
+ls
+cd lazy/ls
+cd lazy/
+ls
+cd nvim-treesitter/
+git status
+z nvim
+git checkout master
+git pull
+nvim
+nvim
+z nushell
+nvim
+z budgetry
+cd api
+cd ../..
+cd qerent-for-ps-data-api/
+z web
+cd -
+cd ../api/
+cd ../web/
+cd ../web
+z server
+pnpm dev
+ls
+./scripts/proto_generate.sh
+nvim
+overlay use .venv/bin/activate.nu
+btop
+overlay use .venv/bin/activate.nu
+python main.py examples/tests
+ping 1.1.1.1
+python main.py examples/tests
+cd -
+nvim
+cd -
+cargo watch -x run
+sqlite3 dev.sqlite
+nvim
+pnpm dev
+./scripts/proto_generate.sh
+cd ../..
+cd bearth/
+ls
+cd custom/
+ls
+cargo watch -i "dev.sqlite*" --why -x run
+cp dev.sqlite test.sqlite
+sqlite3 dev.sqlite < db/migration1.sql
+zsh
+open dev.sqlite | query db "SELECT * FROM app_user"
+open dev.sqlite
+open dev.sqlite | query db "SELECT * FROM app_transaction"
+cargo build
+nvim
+pnpm dev
+./scripts/proto_generate.sh
+nvim
+open dev.sqlite | query db "SELECT * FROM app_transaction"
+open dev.sqlite | query db "SELECT * FROM app_transaction WHERE date <  1743465599686"
+open dev.sqlite | query db "SELECT * FROM app_transaction WHERE date <  1743465599686 AND date >= 1740787200686"
+node
+zsh
+open dev.sqlite | query db "SELECT * FROM app_transaction WHERE date <  1743465599686 AND date >= 1740787200686"
+nvim
+nvim
+cargo watch -i "dev.sqlite*" --why -x run
+lazygit
+pnpm dev
+zellij a
+lazygit
+nvim
+nvim
+z api
+cd ..
+cd api
+cd ../web
+pnpm dev
+cd ../web
+lazygit
+nvim
+nvim
+cargo watch -i "dev.sqlite*" --why -x run
+btop
+pnpm dev
+zellij
+paru
+flatpak update
+paru
+z api
+cd ..
+nvim
+cd api
+podman build -t bgt-test .
+podman run --rm -it bgt-test
+podman build -t bgt-test .
+podman run --rm -it bgt-test
+z personal
+cd rust
+mkdir async-rt
+cd async-rt/
+cargo init
+nvim
+btop
+cargo add io_uring
+cargo add futures
+cargo run
+z api
+z rendrs
+nvim
+lazygit
+nvim
+z rendrs
+ls
+cd ..
+ls
+cd rlox
+ls
+cd ..
+cd db-viewer/
+ls
+cd ..
+cd jos
+ls
+bat rust-toolchain 
+cd ..
+ls
+cd ..
+ls
+cd 1brc-rust/
+ls
+bat rust-toolchain.toml 
+nvim
+cargo run 
+podman push --help
+podman images ls -a
+podman images
+podman build --help
+podman build -t docker.io/jacominnaar/budgetry-api .
+podman push docker.io/jacominnaar/budgetry-api:latest 
+podman login
+podman login --help
+podman login docker.io
+podman push docker.io/jacominnaar/budgetry-api:latest 
+cd

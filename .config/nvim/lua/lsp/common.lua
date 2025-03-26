@@ -16,13 +16,12 @@ M.on_attach = function(client, bufnr)
 	vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
 	vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
 	vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
-	vim.keymap.set("n", "<leader>so", require("telescope.builtin").lsp_document_symbols, opts)
 	vim.keymap.set("n", "<leader>ih", function()
 		vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 	end, opts)
 
 	if client.server_capabilities.inlayHintProvider then
-		vim.lsp.inlay_hint.enable(true)
+		vim.lsp.inlay_hint.enable(false)
 	end
 end
 

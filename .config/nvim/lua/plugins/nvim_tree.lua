@@ -3,7 +3,21 @@ return {
 	lazy = true,
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	tag = "nightly",
+	keys = {
+		{
+			"<leader>tt",
+			function()
+				require("nvim-tree.api").tree.toggle()
+			end,
+		},
+	},
 	opts = {
+		respect_buf_cwd = true,
+		reload_on_bufenter = true,
+		hijack_cursor = true,
+		update_focused_file = {
+			enable = true,
+		},
 		view = {
 			float = {
 				enable = true,
@@ -27,6 +41,7 @@ return {
 					}
 				end,
 			},
+			-- width = 30,
 		},
 		renderer = {
 			highlight_git = true,
@@ -48,4 +63,5 @@ return {
 		},
 		git = { enable = true },
 	},
+	enabled = true,
 }

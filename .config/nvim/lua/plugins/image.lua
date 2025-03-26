@@ -3,4 +3,5 @@ return {
 	dependencies = { "luarocks.nvim" },
 	lazy = false,
 	opts = {},
+    enabled = false
 }

@@ -5,25 +5,25 @@ return {
 		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-nvim-lsp",
 		"onsails/lspkind.nvim",
+		"tailwind-tools",
 	},
+	opts = {},
 	config = function()
-		local cmp = require("cmp")
-		local luasnip = require("luasnip")
-
-		cmp.setup({
+		require("cmp").setup({
 			view = {
 				entries = "custom",
 			},
 			snippet = {
 				expand = function(args)
-					luasnip.lsp_expand(args.body)
+					require("luasnip").lsp_expand(args.body)
 				end,
 			},
-			mapping = cmp.mapping.preset.insert({
-				["<C-d>"] = cmp.mapping.scroll_docs(-4),
-				["<C-f>"] = cmp.mapping.scroll_docs(4),
-				["<C-Space>"] = cmp.mapping.complete({}),
-				["<CR>"] = cmp.mapping(function(fallback)
+			mapping = require("cmp").mapping.preset.insert({
+				["<C-d>"] = require("cmp").mapping.scroll_docs(-4),
+				["<C-f>"] = require("cmp").mapping.scroll_docs(4),
+				["<C-Space>"] = require("cmp").mapping.complete({}),
+				["<CR>"] = require("cmp").mapping(function(fallback)
+					local cmp = require("cmp")
 					if cmp.visible() then
 						cmp.confirm({
 							behavior = cmp.ConfirmBehavior.Replace,
@@ -33,7 +33,9 @@ return {
 						fallback()
 					end
 				end, { "i", "s" }),
-				["<C-j>"] = cmp.mapping(function(fallback)
+				["<C-j>"] = require("cmp").mapping(function(fallback)
+					local cmp = require("cmp")
+					local luasnip = require("luasnip")
 					if cmp.visible() then
 						cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
 					elseif luasnip.expand_or_jumpable() then
@@ -42,7 +44,9 @@ return {
 						fallback()
 					end
 				end, { "i", "s" }),
-				["<C-k>"] = cmp.mapping(function(fallback)
+				["<C-k>"] = require("cmp").mapping(function(fallback)
+					local cmp = require("cmp")
+					local luasnip = require("luasnip")
 					if cmp.visible() then
 						cmp.select_prev_item({ behavior = cmp.SelectBehavior.Select })
 					elseif luasnip.jumpable(-1) then
@@ -65,42 +69,19 @@ return {
 					maxwidth = 50,
 					ellipsis_char = "...",
 					show_labelDetails = true,
-					-- before = function(entry, vim_item)
-					-- 	local types = require("cmp.types")
-					-- 	-- Get the full snippet
-					-- 	local word = entry:get_insert_text()
-					--
-					-- 	-- Clean up multiline text
-					-- 	word = word:gsub("\n", " ")
-					--
-					-- 	-- Truncate long entries
-					-- 	local max = 50
-					-- 	if string.len(word) >= max then
-					-- 		local before = string.sub(word, 1, math.floor((max - 3) / 2))
-					-- 		word = before .. "..."
-					-- 	end
-					--
-					-- 	-- Add indicator for snippet entries
-					-- 	if entry.completion_item.insertTextFormat == types.lsp.InsertTextFormat.Snippet then
-					-- 		word = word .. "~"
-					-- 	end
-					--
-					-- 	vim_item.abbr = word
-					-- 	return vim_item
-					-- end,
+					before = require("tailwind-tools.cmp").lspkind_format,
 				}),
 				fields = { "kind", "abbr", "menu" },
 				expandable_indicator = true,
 			},
 			window = {
-				completion = cmp.config.window.bordered(),
-				documentation = cmp.config.window.bordered(),
+				completion = require("cmp").config.window.bordered(),
+				documentation = require("cmp").config.window.bordered(),
 			},
 			experimental = {
 				ghost_text = true, -- This can help show parameter hints
 			},
 		})
-
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 		capabilities.textDocument.completion.completionItem.snippetSupport = true
 		capabilities.textDocument.completion.completionItem.preselectSupport = true

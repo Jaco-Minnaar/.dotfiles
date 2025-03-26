@@ -44,7 +44,7 @@ return {
 			vim.keymap.set("n", "<leader>e", function()
 				vim.cmd.RustLsp({ "renderDiagnostic", "current" })
 			end, opts)
-			vim.keymap.set("n", "<leader>so", require("telescope.builtin").lsp_document_symbols, opts)
+			-- vim.keymap.set("n", "<leader>so", require("telescope.builtin").lsp_document_symbols, opts)
 
 			vim.lsp.inlay_hint.enable()
 		end

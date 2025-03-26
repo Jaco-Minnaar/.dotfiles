@@ -1,0 +1,42 @@
+layout {
+    default_tab_template {
+        // the default zellij tab-bar and status bar plugins
+        // pane size=1 borderless=true {
+        //     plugin location="zellij:tab-bar"
+        // }
+        pane {
+            children
+        }
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+    }
+    
+    cwd "~/src/bscglobal/genesis_frontend"
+    tab name="lazygit" focus=true {
+        pane command="lazygit"
+    }
+    tab cwd="./Woolworths.Genesis.Web/ClientApp" name="nvim" {
+        pane command="nvim"
+    }
+    tab cwd="./Woolworths.Genesis.Web/ClientApp" name="shell" {
+        pane 
+    }
+    tab cwd="./Woolworths.Genesis.Web" name="run" split_direction="vertical" {
+        pane split_direction="horizontal" {
+            pane {
+                command "podman"
+                args "run" "--rm" "-it" "-e" "'ACCEPT_EULA=Y'" "-e" "'MSSQL_SA_PASSWORD=Adm1n@12'" "-p" "1433:1433" "-v" "sqlvolume:/var/opt/mssql" "--name" "genesis_dev_db" "mcr.microsoft.com/mssql/server:2019-latest"
+            } 
+            pane {
+                command "dotnet"
+                args "run"
+            }
+        }
+        pane {
+            cwd "ClientApp" 
+            command "npm"
+            args "start"
+        } 
+    }
+}
