@@ -15,7 +15,7 @@ end
 
 return {
 	"mrcjkb/rustaceanvim",
-	version = "^5", -- Recommended
+	version = "^6", -- Recommended
 	ft = "rust",
 	init = function()
 		local on_attach = function(client, bufnr)
@@ -42,7 +42,7 @@ return {
 				vim.cmd.RustLsp("expandMacro")
 			end, opts)
 			vim.keymap.set("n", "<leader>e", function()
-				vim.cmd.RustLsp({ "renderDiagnostic", "current" })
+				vim.cmd.RustLsp("renderDiagnostic")
 			end, opts)
 			-- vim.keymap.set("n", "<leader>so", require("telescope.builtin").lsp_document_symbols, opts)
 
@@ -82,6 +82,11 @@ return {
 							enable = true,
 						},
 					},
+				},
+			},
+			tools = {
+				float_win_config = {
+					border = "rounded",
 				},
 			},
 		}

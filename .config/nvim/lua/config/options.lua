@@ -34,7 +34,8 @@ vim.opt.smartcase = true
 -- Decrease update time
 vim.opt.updatetime = 80
 
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "yes:2"
+vim.opt.numberwidth = 6
 vim.opt.colorcolumn = "100"
 vim.opt.cursorline = true
 

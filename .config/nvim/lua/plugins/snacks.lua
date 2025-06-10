@@ -4,59 +4,20 @@ return {
 	lazy = false,
 	dependencies = { "echasnovski/mini.icons", "nvim-tree/nvim-web-devicons" },
 	opts = {
-		picker = {},
-		explorer = {},
-	},
-	keys = {
-		{
-			"<leader><space>",
-			function()
-				Snacks.picker.buffers()
-			end,
-			desc = "Buffers",
-		},
-		{
-			"<leader>sf",
-			function()
-				Snacks.picker.files()
-			end,
-			desc = "Find files",
-		},
-		{
-			"<leader>ss",
-			function()
-				Snacks.picker.lsp_symbols()
-			end,
-			desc = "LSP Symbols",
-		},
-		{
-			"<leader>sd",
-			function()
-				Snacks.picker.diagnostics()
-			end,
-			desc = "Diagnostics",
-		},
-		{
-			"<leader>sD",
-			function()
-				Snacks.picker.diagnostics_buffer()
-			end,
-			desc = "Buffer Diagnostics",
-		},
-		{
-			"<leader>sh",
-			function()
-				Snacks.picker.help()
-			end,
-			desc = "Help Pages",
-		},
-		{
-			"<leader>sg",
-			function()
-				Snacks.picker.grep()
-			end,
-			desc = "Grep",
+		input = {},
+		statuscolumn = {
+			left = { "fold", "git" }, -- priority of signs on the right (high to low)
+			right = { "mark", "sign" }, -- priority of signs on the left (high to low)
+			folds = {
+				open = false, -- show open fold icons
+				git_hl = false, -- use Git Signs hl for fold icons
+			},
+			git = {
+				-- patterns to match Git signs
+				patterns = { "GitSign", "MiniDiffSign" },
+			},
+			refresh = 50, -- refresh at most every 50ms
 		},
 	},
-	enabled = false,
+	enabled = true,
 }

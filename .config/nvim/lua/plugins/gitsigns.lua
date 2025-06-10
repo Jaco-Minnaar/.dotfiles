@@ -2,7 +2,7 @@ return {
 	"lewis6991/gitsigns.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
 	opts = {
-		numhl = true,
+		numhl = false,
 		current_line_blame = true,
 		on_attach = function(bufnr)
 			local gs = package.loaded.gitsigns
